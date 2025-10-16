@@ -1,0 +1,346 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · EarthScience（补全）</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · EarthScience（补全）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EarthScience</td>
+      <td>Remote Sensing</td>
+      <td>USGS Landsat Collection 2</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#fb923c;margin-right:6px;vertical-align:middle;'></span>大型</td>
+      <td>大型</td>
+      <td>≈200 TB</td>
+      <td>开放访问</td>
+      <td>USGS EarthExplorer / AWS</td>
+      <td><a href="https://earthexplorer.usgs.gov/" target="_blank" rel="noopener">https://earthexplorer.usgs.gov/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>长期多光谱遥感基础数据</td>
+      <td>多光谱影像（30m/15m）</td>
+      <td>土地覆盖、变化检测</td>
+      <td>长期时序；部分镜像在 AWS Open Data</td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Remote Sensing</td>
+      <td>Copernicus Sentinel-1/2/3</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#fb923c;margin-right:6px;vertical-align:middle;'></span>大型</td>
+      <td>大型</td>
+      <td>≈500 TB</td>
+      <td>开放访问</td>
+      <td>Copernicus Data Space / API</td>
+      <td><a href="https://dataspace.copernicus.eu/" target="_blank" rel="noopener">https://dataspace.copernicus.eu/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>SAR/光学/海洋/大气多传感器</td>
+      <td>SAR/多光谱/海色</td>
+      <td>监测、灾害、生态</td>
+      <td>原 SciHub 已迁移到 Data Space</td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Remote Sensing</td>
+      <td>NASA MODIS (Terra/Aqua)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈50 TB</td>
+      <td>开放访问</td>
+      <td>NASA/LAADS / GES DISC</td>
+      <td><a href="https://modis.gsfc.nasa.gov/data/" target="_blank" rel="noopener">https://modis.gsfc.nasa.gov/data/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>中分辨率多源产品</td>
+      <td>地表/植被/火点/雪冰等</td>
+      <td>气候-生态指标时序</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Remote Sensing</td>
+      <td>NASA VIIRS (Suomi-NPP/NOAA-20)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈30 TB</td>
+      <td>开放访问</td>
+      <td>NASA/NOAA / GES DISC</td>
+      <td><a href="https://viirsland.gsfc.nasa.gov/" target="_blank" rel="noopener">https://viirsland.gsfc.nasa.gov/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>夜光/火点/云等</td>
+      <td>多产品栅格</td>
+      <td>城市化、灾害监测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Precipitation</td>
+      <td>NASA GPM IMERG</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10 TB</td>
+      <td>开放访问</td>
+      <td>NASA / GES DISC</td>
+      <td><a href="https://gpm.nasa.gov/" target="_blank" rel="noopener">https://gpm.nasa.gov/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球卫星融合降水</td>
+      <td>0.1°/半小时栅格</td>
+      <td>暴雨研究、水文模拟</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Soil Moisture</td>
+      <td>NASA SMAP</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10 TB</td>
+      <td>开放访问</td>
+      <td>NASA / NSIDC</td>
+      <td><a href="https://smap.jpl.nasa.gov/data/" target="_blank" rel="noopener">https://smap.jpl.nasa.gov/data/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>被动/主动微波土壤湿度</td>
+      <td>栅格/时间序列</td>
+      <td>水文、干旱监测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Topography</td>
+      <td>SRTM (Shuttle Radar Topography Mission)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈2 TB</td>
+      <td>开放访问</td>
+      <td>USGS / NASA</td>
+      <td><a href="https://www2.jpl.nasa.gov/srtm/" target="_blank" rel="noopener">https://www2.jpl.nasa.gov/srtm/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球数字高程模型</td>
+      <td>DEM 栅格（30m/90m）</td>
+      <td>地形、水文、可视域</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Topography</td>
+      <td>ASTER GDEM</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈2 TB</td>
+      <td>开放访问</td>
+      <td>NASA / METI</td>
+      <td><a href="https://asterweb.jpl.nasa.gov/gdem.asp" target="_blank" rel="noopener">https://asterweb.jpl.nasa.gov/gdem.asp</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球数字高程模型</td>
+      <td>DEM 栅格（30m）</td>
+      <td>地形补充、山地分析</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Topography</td>
+      <td>GMTED2010</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈500 GB</td>
+      <td>开放访问</td>
+      <td>USGS</td>
+      <td><a href="https://topotools.cr.usgs.gov/gmted_viewer/" target="_blank" rel="noopener">https://topotools.cr.usgs.gov/gmted_viewer/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>全球多分辨率地形</td>
+      <td>DEM 栅格</td>
+      <td>全球尺度分析</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Bathymetry</td>
+      <td>GEBCO Bathymetry</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP</td>
+      <td><a href="https://www.gebco.net/" target="_blank" rel="noopener">https://www.gebco.net/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球海底地形网格</td>
+      <td>栅格/等深线</td>
+      <td>海洋地形、导航</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Topography+Oceans</td>
+      <td>NOAA ETOPO1/ETOPO2022</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1 TB</td>
+      <td>开放访问</td>
+      <td>NOAA / FTP</td>
+      <td><a href="https://www.ngdc.noaa.gov/mgg/global/" target="_blank" rel="noopener">https://www.ngdc.noaa.gov/mgg/global/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球一体化地形/海深</td>
+      <td>栅格</td>
+      <td>地球系统底图</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Hazards</td>
+      <td>USGS Earthquake Catalog</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈200 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://earthquake.usgs.gov/earthquakes/search/" target="_blank" rel="noopener">https://earthquake.usgs.gov/earthquakes/search/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球地震目录</td>
+      <td>事件/时空/震级</td>
+      <td>地震统计、预警研究</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Volcanology</td>
+      <td>Smithsonian Global Volcanism Program (GVP)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://volcano.si.edu/" target="_blank" rel="noopener">https://volcano.si.edu/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>火山事件与火山体数据库</td>
+      <td>事件/火山属性</td>
+      <td>灾害史、风险评估</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Wildfire</td>
+      <td>NASA FIRMS</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈500 GB</td>
+      <td>开放访问</td>
+      <td>Web / API / Tiles</td>
+      <td><a href="https://firms.modaps.eosdis.nasa.gov/" target="_blank" rel="noopener">https://firms.modaps.eosdis.nasa.gov/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>MODIS/VIIRS 活跃火点</td>
+      <td>矢量/栅格/瓦片</td>
+      <td>火灾监测、影响评估</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Hydrology</td>
+      <td>GRACE / GRACE-FO (mascon)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈500 GB</td>
+      <td>开放访问</td>
+      <td>NASA / JPL</td>
+      <td><a href="https://grace.jpl.nasa.gov/data/" target="_blank" rel="noopener">https://grace.jpl.nasa.gov/data/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>重力反演水储量变化</td>
+      <td>栅格/时间序列</td>
+      <td>大陆水储量/干旱</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Hydrology</td>
+      <td>GLDAS (Global Land Data Assimilation System)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10 TB</td>
+      <td>开放访问</td>
+      <td>NASA / GES DISC</td>
+      <td><a href="https://ldas.gsfc.nasa.gov/gldas" target="_blank" rel="noopener">https://ldas.gsfc.nasa.gov/gldas</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>陆面同化驱动与输出</td>
+      <td>栅格/时间序列</td>
+      <td>水热通量、陆面过程</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Land Cover</td>
+      <td>Copernicus Global Land Cover</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10 TB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://lcviewer.vito.be/" target="_blank" rel="noopener">https://lcviewer.vito.be/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球地表覆盖（100m）</td>
+      <td>分类栅格/年际</td>
+      <td>土地利用/生态评估</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Geology</td>
+      <td>USGS National Map (NA)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10 TB</td>
+      <td>开放访问</td>
+      <td>Web / Services</td>
+      <td><a href="https://www.usgs.gov/programs/national-geospatial-program/national-map" target="_blank" rel="noopener">https://www.usgs.gov/programs/national-geospatial-program/national-map</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>美国基础地理/地质要素</td>
+      <td>矢量/栅格/服务</td>
+      <td>地形、地表水、地貌</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EarthScience</td>
+      <td>Magnetics</td>
+      <td>WDMAM (World Digital Magnetic Anomaly Map)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.wdmam.org/" target="_blank" rel="noopener">https://www.wdmam.org/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>全球磁异常图</td>
+      <td>栅格</td>
+      <td>地球物理/构造研究</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table></body></html>

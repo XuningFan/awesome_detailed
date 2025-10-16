@@ -1,0 +1,218 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · GIS（补全）</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · GIS（补全）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GIS</td>
+      <td>Base Maps</td>
+      <td>OpenStreetMap Planet (PBF/Planet)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#fb923c;margin-right:6px;vertical-align:middle;'></span>大型</td>
+      <td>大型</td>
+      <td>≈1 PB（全量含历史/派生）</td>
+      <td>开放访问</td>
+      <td>Web / API / PBF</td>
+      <td><a href="https://planet.openstreetmap.org/" target="_blank" rel="noopener">https://planet.openstreetmap.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>众包地理权威底图</td>
+      <td>矢量（道路/建筑/POI/关系）</td>
+      <td>制图、导航、路网/POI 分析</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GIS</td>
+      <td>Base Maps</td>
+      <td>OpenStreetMap Extracts (Geofabrik)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB（区域分发）</td>
+      <td>开放访问</td>
+      <td>Web / PBF</td>
+      <td><a href="https://download.geofabrik.de/" target="_blank" rel="noopener">https://download.geofabrik.de/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>OSM 按洲/国家/省提取</td>
+      <td>矢量/区域包</td>
+      <td>下载便捷、更新频繁</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GIS</td>
+      <td>Admin Boundaries</td>
+      <td>GADM (Global Administrative Areas)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://gadm.org/" target="_blank" rel="noopener">https://gadm.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球行政区划边界</td>
+      <td>矢量（多级行政界）</td>
+      <td>行政/统计/制图</td>
+      <td>许可需遵循</td>
+    </tr>
+    <tr>
+      <td>GIS</td>
+      <td>Admin Boundaries</td>
+      <td>Natural Earth</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">https://www.naturalearthdata.com/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>制图友好底图（1:10m/50m/110m）</td>
+      <td>矢量/栅格</td>
+      <td>地图制图、演示</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GIS</td>
+      <td>Census/Carto</td>
+      <td>US Census TIGER/Line</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈200 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP</td>
+      <td><a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html" target="_blank" rel="noopener">https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>美国普查矢量（道路/区划/地址）</td>
+      <td>矢量/表格</td>
+      <td>人口/经济、地址匹配</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GIS</td>
+      <td>Gazetteer/Names</td>
+      <td>GeoNames (DB dumps)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50 GB</td>
+      <td>开放访问</td>
+      <td>Web / Dumps / API</td>
+      <td><a href="https://www.geonames.org/" target="_blank" rel="noopener">https://www.geonames.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球地名/经纬度/别名</td>
+      <td>表格/点位</td>
+      <td>地名解析、地理编码</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GIS</td>
+      <td>Places/Hierarchy</td>
+      <td>Who's On First (WOF)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB</td>
+      <td>开放访问</td>
+      <td>Web / GitHub</td>
+      <td><a href="https://www.whosonfirst.org/" target="_blank" rel="noopener">https://www.whosonfirst.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>分层地名与边界（多来源融合）</td>
+      <td>GeoJSON/层级ID</td>
+      <td>地名规范化、POI 合并</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GIS</td>
+      <td>Addresses</td>
+      <td>OpenAddresses</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈200 GB</td>
+      <td>开放访问</td>
+      <td>Web / GitHub</td>
+      <td><a href="https://openaddresses.io/" target="_blank" rel="noopener">https://openaddresses.io/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球地址点（政府/公开源聚合）</td>
+      <td>点/线/属性</td>
+      <td>地理编码、地址清洗</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GIS</td>
+      <td>Elevation (Topo)</td>
+      <td>OpenTopography (global/local DEM/LiDAR)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–100 TB（含LiDAR）</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://opentopography.org/" target="_blank" rel="noopener">https://opentopography.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>DEM/点云/服务（部分需申请）</td>
+      <td>DEM/点云</td>
+      <td>坡度/地貌/三维城市</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GIS</td>
+      <td>Imagery</td>
+      <td>OpenAerialMap</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–100 TB（分散）</td>
+      <td>开放访问</td>
+      <td>Web / API / Tiles</td>
+      <td><a href="https://openaerialmap.org/" target="_blank" rel="noopener">https://openaerialmap.org/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>开放航片聚合索引</td>
+      <td>影像/瓦片/元数据</td>
+      <td>灾后测绘/制图</td>
+      <td>质量不一</td>
+    </tr>
+    <tr>
+      <td>GIS</td>
+      <td>POI/Boundaries</td>
+      <td>Humanitarian Data Exchange (HDX) – COD/POI</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB（分散）</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://data.humdata.org/" target="_blank" rel="noopener">https://data.humdata.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>人道场景基础数据（国家/行政/POI）</td>
+      <td>矢量/表格</td>
+      <td>发展与人道项目</td>
+      <td>聚合平台</td>
+    </tr>
+  </tbody>
+</table></body></html]

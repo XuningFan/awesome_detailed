@@ -1,0 +1,266 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · TimeSeries（补全）</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · TimeSeries（补全）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TimeSeries</td>
+      <td>Classification (Uni‑variate)</td>
+      <td>UCR Time Series Classification Archive</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.timeseriesclassification.com/" target="_blank" rel="noopener">https://www.timeseriesclassification.com/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>单变量时间序列分类权威基准</td>
+      <td>时间序列/多变量/标签</td>
+      <td>形状匹配、DTW、深度分类</td>
+      <td>按年更新、含多版本</td>
+    </tr>
+    <tr>
+      <td>TimeSeries</td>
+      <td>Classification (Multi‑variate)</td>
+      <td>UEA Multivariate Time Series Archive</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.timeseriesclassification.com/dataset.php" target="_blank" rel="noopener">https://www.timeseriesclassification.com/dataset.php</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>多变量时间序列分类集合</td>
+      <td>时间序列/多变量/标签</td>
+      <td>多变量分类/融合</td>
+      <td>与 UCR 同站点下多变量分栏</td>
+    </tr>
+    <tr>
+      <td>TimeSeries</td>
+      <td>Forecasting (Repository)</td>
+      <td>Monash Time Series Forecasting Repository (TSDL/Monash)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–200 GB</td>
+      <td>开放访问</td>
+      <td>Web / GitHub</td>
+      <td><a href="https://forecastingdata.org/" target="_blank" rel="noopener">https://forecastingdata.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>多领域可复现预测数据仓（含元数据）</td>
+      <td>时间序列/多变量/标签</td>
+      <td>基准复现、AutoML、元学习</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TimeSeries</td>
+      <td>Forecasting (Competitions)</td>
+      <td>M3 Competition dataset (Makridakis & Hibon)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–5 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://forecasters.org/resources/time-series-data/m3-competition/" target="_blank" rel="noopener">https://forecasters.org/resources/time-series-data/m3-competition/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>经典预测竞赛 M3（3003 序列）</td>
+      <td>时间序列/多变量/标签</td>
+      <td>方法对比、基线</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TimeSeries</td>
+      <td>Forecasting (Competitions)</td>
+      <td>M4 Competition dataset</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈5–10 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://forecasters.org/resources/time-series-data/m4-competition/" target="_blank" rel="noopener">https://forecasters.org/resources/time-series-data/m4-competition/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>大规模预测竞赛 M4（100k+ 序列）</td>
+      <td>时间序列/多变量/标签</td>
+      <td>点/区间预测评测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TimeSeries</td>
+      <td>Forecasting (Retail)</td>
+      <td>M5 Competition (Walmart retail)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–50 GB</td>
+      <td>注册访问</td>
+      <td>Kaggle</td>
+      <td><a href="https://www.kaggle.com/c/m5-forecasting-accuracy" target="_blank" rel="noopener">https://www.kaggle.com/c/m5-forecasting-accuracy</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>零售分层销量预测（品类/门店/日频）</td>
+      <td>时间序列/多变量/标签</td>
+      <td>层次与不等方差建模</td>
+      <td>需 Kaggle 账号与条款</td>
+    </tr>
+    <tr>
+      <td>TimeSeries</td>
+      <td>Forecasting (Tourism)</td>
+      <td>Tourism Forecasting (Tourism1/2/Industry)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–5 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://robjhyndman.com/tsa/tourism/" target="_blank" rel="noopener">https://robjhyndman.com/tsa/tourism/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>旅游需求（州/地区/行业）多频率序列</td>
+      <td>时间序列/多变量/标签</td>
+      <td>分层预测、ETS/ARIMA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TimeSeries</td>
+      <td>Forecasting (Electricity)</td>
+      <td>GEFCom2012/2014 (Global Energy Forecasting)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈5–10 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.drhongtao.com/gefcom/" target="_blank" rel="noopener">https://www.drhongtao.com/gefcom/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>负荷/风/光伏/价格等能源预测竞赛</td>
+      <td>时间序列/多变量/标签</td>
+      <td>能量预测、组合模型</td>
+      <td>各子赛题口径不同</td>
+    </tr>
+    <tr>
+      <td>TimeSeries</td>
+      <td>Anomaly Detection</td>
+      <td>Yahoo Webscope S5 (A1/A2/A3/A4)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–5 GB</td>
+      <td>注册访问</td>
+      <td>Web（协议）</td>
+      <td><a href="https://webscope.sandbox.yahoo.com/catalog.php?datatype=s&did=70" target="_blank" rel="noopener">https://webscope.sandbox.yahoo.com/catalog.php?datatype=s&did=70</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>带标注的异常检测时间序列</td>
+      <td>时间序列/多变量/标签</td>
+      <td>异常检测/阈值/评测</td>
+      <td>需签署使用协议</td>
+    </tr>
+    <tr>
+      <td>TimeSeries</td>
+      <td>Anomaly Detection</td>
+      <td>Numenta Anomaly Benchmark (NAB)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–5 GB</td>
+      <td>开放访问</td>
+      <td>GitHub</td>
+      <td><a href="https://github.com/numenta/NAB" target="_blank" rel="noopener">https://github.com/numenta/NAB</a></td>
+      <td>⭐⭐⭐⭐ 高</td>
+      <td>多域真实与仿真的带标注异常集</td>
+      <td>时间序列/多变量/标签</td>
+      <td>流式检测、评测框架</td>
+      <td>含评分与窗口机制</td>
+    </tr>
+    <tr>
+      <td>TimeSeries</td>
+      <td>Economics/Finance</td>
+      <td>FRED (as time series source)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">https://fred.stlouisfed.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>宏观与金融时间序列 API</td>
+      <td>时间序列/多变量/标签</td>
+      <td>预测、因果、状态空间</td>
+      <td>与 Economics 亦相关</td>
+    </tr>
+    <tr>
+      <td>TimeSeries</td>
+      <td>IoT/Smart Home</td>
+      <td>UCI – Individual Household Electric Power Consumption</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–5 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption" target="_blank" rel="noopener">https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>法国家庭电力功率分钟级</td>
+      <td>时间序列/多变量/标签</td>
+      <td>负荷预测、异常检测</td>
+      <td>UCI 经典集</td>
+    </tr>
+    <tr>
+      <td>TimeSeries</td>
+      <td>IoT/Appliances</td>
+      <td>UCI – Appliances energy prediction</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–5 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://archive.ics.uci.edu/ml/datasets/Appliances+energy+prediction" target="_blank" rel="noopener">https://archive.ics.uci.edu/ml/datasets/Appliances+energy+prediction</a></td>
+      <td>⭐⭐ 中</td>
+      <td>室内环境/电器能耗预测</td>
+      <td>时间序列/多变量/标签</td>
+      <td>回归/特征工程</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TimeSeries</td>
+      <td>Air Quality</td>
+      <td>UCI – Beijing PM2.5 / UCI Air Quality</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–5 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://archive.ics.uci.edu/" target="_blank" rel="noopener">https://archive.ics.uci.edu/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>空气质量与气象多维序列</td>
+      <td>时间序列/多变量/标签</td>
+      <td>空气质量预测、因果</td>
+      <td>多个相关子集</td>
+    </tr>
+  </tbody>
+</table></body></html>

@@ -1,0 +1,250 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · Finance（补全）</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · Finance（补全）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Finance</td>
+      <td>Macro/Markets</td>
+      <td>FRED (Federal Reserve Economic Data)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">https://fred.stlouisfed.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>美联储与国际宏观/金融时间序列</td>
+      <td>时间序列</td>
+      <td>计量经济、金融研究</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Finance</td>
+      <td>Filings/Disclosure</td>
+      <td>SEC EDGAR Full-Text & Index</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈20 TB</td>
+      <td>开放访问</td>
+      <td>Web / API / Bulk</td>
+      <td><a href="https://www.sec.gov/edgar" target="_blank" rel="noopener">https://www.sec.gov/edgar</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>上市公司披露（10-K/8-K/13F 等）</td>
+      <td>文本/PDF/HTML/结构化索引</td>
+      <td>NLP、事件研究、信息抽取</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Finance</td>
+      <td>International Finance</td>
+      <td>IMF IFS / WEO / DOTS</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://www.imf.org/en/Data" target="_blank" rel="noopener">https://www.imf.org/en/Data</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>国际金融统计/预测/贸易流</td>
+      <td>时间序列/跨国面板</td>
+      <td>汇率/通胀/国际比较</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Finance</td>
+      <td>Banking/Markets</td>
+      <td>BIS Statistics (credit, debt, FX, derivatives)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://stats.bis.org/" target="_blank" rel="noopener">https://stats.bis.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>国际清算银行金融统计</td>
+      <td>时间序列/面板</td>
+      <td>系统性风险/全球金融周期</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Finance</td>
+      <td>Europe Markets</td>
+      <td>ECB Statistical Data Warehouse (SDW)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://sdw.ecb.europa.eu/" target="_blank" rel="noopener">https://sdw.ecb.europa.eu/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>欧央行统计数据平台</td>
+      <td>时间序列</td>
+      <td>利率/银行/支付/证券</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Finance</td>
+      <td>US Gov Rates</td>
+      <td>U.S. Treasury Yield Curve & Rates</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10 GB</td>
+      <td>开放访问</td>
+      <td>Web / CSV</td>
+      <td><a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates" target="_blank" rel="noopener">https://home.treasury.gov/resource-center/data-chart-center/interest-rates</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>美债收益率曲线/票面利率</td>
+      <td>时间序列</td>
+      <td>期限结构、定价</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Finance</td>
+      <td>Equities/FX/CFD</td>
+      <td>Stooq Historical Data</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://stooq.com/db/" target="_blank" rel="noopener">https://stooq.com/db/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>多市场日频/高频历史行情</td>
+      <td>OHLC/分笔/分时</td>
+      <td>量化回测/教学</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Finance</td>
+      <td>Asset Pricing</td>
+      <td>Kenneth French Data Library (Fama‑French factors)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html" target="_blank" rel="noopener">https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>资产定价经典因子与组合收益</td>
+      <td>组合时间序列/截面</td>
+      <td>Fama‑French/Carhart 因子研究</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Finance</td>
+      <td>Data Aggregator</td>
+      <td>Nasdaq Data Link（原 Quandl，public/free tables）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–100 GB（公共子集）</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://data.nasdaq.com/" target="_blank" rel="noopener">https://data.nasdaq.com/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>多源金融经济公共数据聚合</td>
+      <td>表格/时间序列</td>
+      <td>研究/原型开发</td>
+      <td>部分数据付费</td>
+    </tr>
+    <tr>
+      <td>Finance</td>
+      <td>Identifiers/Mapping</td>
+      <td>OpenFIGI (Financial Instrument Global Identifiers)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–50 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://www.openfigi.com/" target="_blank" rel="noopener">https://www.openfigi.com/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>金融工具识别与映射</td>
+      <td>标识符/元数据</td>
+      <td>跨库对齐/数据清洗</td>
+      <td>需注册API Key</td>
+    </tr>
+    <tr>
+      <td>Finance</td>
+      <td>Crypto/Market Data</td>
+      <td>Kaiko Public Samples</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈200 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://docs.kaiko.com/" target="_blank" rel="noopener">https://docs.kaiko.com/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>加密现货/衍生品公共示例</td>
+      <td>行情/深度/成交</td>
+      <td>量化研究/市场微观结构</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Finance</td>
+      <td>Crypto/On‑chain</td>
+      <td>Coin Metrics Community Data</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–500 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://community.coinmetrics.io/" target="_blank" rel="noopener">https://community.coinmetrics.io/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>主流链指标与市场数据（社区版）</td>
+      <td>链上指标/行情</td>
+      <td>加密资产研究</td>
+      <td>社区版字段有限</td>
+    </tr>
+    <tr>
+      <td>Finance</td>
+      <td>Trade/Transparency</td>
+      <td>FINRA Market Data (ATS/OTC, short interest)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–200 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.finra.org/filing-reporting/market-transparency-data" target="_blank" rel="noopener">https://www.finra.org/filing-reporting/market-transparency-data</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>美国场外与做空相关透明度数据</td>
+      <td>交易量/短仓/报价</td>
+      <td>市场结构、合规研究</td>
+      <td>不同栏目口径各异</td>
+    </tr>
+  </tbody>
+</table></body></html]

@@ -1,0 +1,94 @@
+
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<title>Data bank · Terminal (Fixed)</title>
+<style>
+  body{margin:0;background:#020617;color:#e2e8f0;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas}
+  header{padding:30px 22px;border-bottom:1px dashed #475569}
+  h1{margin:0 0 6px 0;font-size:36px}
+  .sub{color:#94a3b8}
+  .toolbar{display:flex;gap:8px;flex-wrap:wrap}
+  .search,.sel{background:#0a0f1a;border:1px dashed #334155;color:#e2e8f0;border-radius:6px;padding:8px 10px}
+  .search{flex:1;min-width:300px}
+  .grid{padding:14px 22px 40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+  .card{background:#0a0f1a;border:1px dashed #334155;border-radius:8px;padding:10px}
+  .head{display:flex;align-items:center;justify-content:space-between}
+  .name{font-weight:800}
+  .open{padding:6px 8px;border-radius:6px;background:#10b981;color:#03120c;text-decoration:none;font-weight:800;border:1px dashed #065f46}
+  .badge{padding:2px 6px;border-radius:6px;background:#020617;border:1px dashed #334155;font-size:12px;color:#a7f3d0}
+  .sizes{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+  .chip{padding:2px 6px;border-radius:6px;border:1px dashed #334155;background:#0a0f1a}
+  .chip.red{color:#fecaca;border-color:#ef4444}
+  .chip.orange{color:#fde68a;border-color:#f59e0b}
+  .chip.amber{color:#fef3c7;border-color:#fbbf24}
+  .chip.green{color:#bbf7d0;border-color:#22c55e}
+  .tag{display:inline-block;margin:4px 6px 0 0;padding:2px 6px;border-radius:6px;background:#020617;border:1px dashed #334155;font-size:12px}
+</style>
+<header>
+  <h1>$ databank</h1>
+  <div class="sub">Terminal look for dense information — fixed & alphabetized</div>
+  <div class="toolbar">
+    <input id="q" class="search" placeholder="grep 'category|title'">
+    <select id="size" class="sel">
+      <option value="">All sizes</option>
+      <option value="超大型">超大型（≥1PB）</option>
+      <option value="大型">大型（100TB–1PB）</option>
+      <option value="中型">中型（10–100TB）</option>
+      <option value="小型">小型（<10TB）</option>
+    </select>
+    <select id="cat" class="sel"><option>Loading…</option></select>
+  </div>
+</header>
+<div class="grid"></div>
+
+<script>
+  const RAW = [{"category": "Agriculture", "title": "Awesome Public Datasets · Agriculture（补全）", "h1": "Awesome Public Datasets · Agriculture（补全）", "href": "./agriculture.html", "count": 6, "sizes": {"超大型": 1, "大型": 2, "中型": 1, "小型": 13}, "tags": ["Crop yields (1981–2016)", "Soil moisture (hyperspectral)", "Fruit quality (lemons)", "Vegetation index", "Nutrition", "Plants taxonomy"]}, {"category": "Architecture", "title": "Awesome Public Datasets · Architecture（补全）", "h1": "Awesome Public Datasets · Architecture（补全）", "href": "./architecture.html", "count": 10, "sizes": {"超大型": 1, "大型": 4, "中型": 5, "小型": 15}, "tags": ["Geospatial", "Energy/Simulation", "Urban/Open Data", "Cadastral", "Housing/Energy", "3D/LiDAR（支撑）", "Urban Atlas"]}, {"category": "Biology", "title": "Awesome Public Datasets · Biology (Expanded)", "h1": "Awesome Public Datasets · Biology（扩充版，按官方清单对齐）", "href": "./biology.html", "count": 39, "sizes": {"超大型": 3, "大型": 4, "中型": 15, "小型": 63}, "tags": ["Genomics", "Imaging/Registration", "Microbiome", "Pathology Imaging", "Imaging", "Cancer Genomics", "Histology Imaging", "Cytometry Imaging", "Functional Genomics", "Structural Biology", "Ontology", "Ecology"]}, {"category": "Chemistry", "title": "Awesome Public Datasets · Chemistry（补全）", "h1": "Awesome Public Datasets · Chemistry（补全）", "href": "./chemistry.html", "count": 22, "sizes": {"超大型": 1, "大型": 2, "中型": 11, "小型": 35}, "tags": ["Cheminformatics", "Spectra/Metabolomics", "Structural Chemistry", "Crystallography", "Reference", "Materials/CompChem"]}, {"category": "Climate Weather", "title": "Awesome Public Datasets · Climate+Weather（全量补全）", "h1": "Awesome Public Datasets · Climate+Weather（全量补全）", "href": "./climate_weather.html", "count": 22, "sizes": {"超大型": 1, "大型": 2, "中型": 21, "小型": 25}, "tags": ["—"]}, {"category": "Complementary Collections", "title": "Awesome Public Datasets · Complementary Collections（补全）", "h1": "Awesome Public Datasets · Complementary Collections（补全）", "href": "./complementary_collections.html", "count": 13, "sizes": {"超大型": 1, "大型": 8, "中型": 5, "小型": 18}, "tags": ["Meta Catalog", "Cloud Registry", "ML/NLP Hub", "ML/CV Index", "General Archive", "Open Data Hub"]}, {"category": "Complexnetworks", "title": "Awesome Public Datasets · ComplexNetworks（补全）", "h1": "Awesome Public Datasets · ComplexNetworks（补全）", "href": "./complexnetworks.html", "count": 10, "sizes": {"超大型": 1, "大型": 6, "中型": 3, "小型": 15}, "tags": ["General Graphs", "Citation/Scholarly", "Sparse Matrices/Graphs", "Benchmarks", "Transport/Aviation", "Social/Forums", "Web", "Road/Transport"]}, {"category": "Computernetworks", "title": "Awesome Public Datasets · ComputerNetworks（补全）", "h1": "Awesome Public Datasets · ComputerNetworks（补全）", "href": "./computernetworks.html", "count": 11, "sizes": {"超大型": 1, "大型": 2, "中型": 11, "小型": 13}, "tags": ["Internet Measurement", "Active Probing", "Routing/BGP", "Traffic", "Wireless/Mobile", "Performance", "Darknet/Backscatter", "DNS"]}, {"category": "Cybersecurity", "title": "Awesome Public Datasets · CyberSecurity（补全）", "h1": "Awesome Public Datasets · CyberSecurity（补全）", "href": "./cybersecurity.html", "count": 19, "sizes": {"超大型": 1, "大型": 2, "中型": 3, "小型": 37}, "tags": ["IDS Benchmarks", "DDoS", "Botnet", "Academic", "Host-based", "Malware", "Android Malware", "Threat Intelligence", "DNS", "Darknet"]}, {"category": "Datachallenges", "title": "Awesome Public Datasets · DataChallenges（补全）", "h1": "Awesome Public Datasets · DataChallenges（补全）", "href": "./datachallenges.html", "count": 14, "sizes": {"超大型": 1, "大型": 2, "中型": 5, "小型": 25}, "tags": ["Platforms", "Repositories", "Archives", "Benchmarks", "IR/NLP", "Vision", "Speech"]}, {"category": "Earthscience", "title": "Awesome Public Datasets · EarthScience（补全）", "h1": "Awesome Public Datasets · EarthScience（补全）", "href": "./earthscience.html", "count": 19, "sizes": {"超大型": 1, "大型": 6, "中型": 15, "小型": 21}, "tags": ["Remote Sensing", "Precipitation", "Soil Moisture", "Topography", "Bathymetry", "Topography+Oceans", "Hazards", "Volcanology", "Wildfire", "Hydrology", "Land Cover", "Geology"]}, {"category": "Economics", "title": "Awesome Public Datasets · Economics（补全）", "h1": "Awesome Public Datasets · Economics（补全）", "href": "./economics.html", "count": 16, "sizes": {"超大型": 1, "大型": 2, "中型": 3, "小型": 31}, "tags": ["Macro/Development", "Macro/Finance", "Macro/Comparative", "Macro/Monetary", "National Accounts", "Labor", "Trade", "Trade/Value Chains", "Prices/PPP", "Inequality", "Long-run GDP", "Europe/Multi-topic"]}, {"category": "Education", "title": "Awesome Public Datasets · Education（补全）", "h1": "Awesome Public Datasets · Education（补全）", "href": "./education.html", "count": 9, "sizes": {"超大型": 1, "大型": 2, "中型": 1, "小型": 19}, "tags": ["HigherEd", "K-12 / Assessments", "HigherEd / Outcomes", "School System", "International Assessments", "MOOC / Learning Analytics", "MOOC / Clickstream", "Open Education"]}, {"category": "Energy", "title": "Awesome Public Datasets · Energy（补全）", "h1": "Awesome Public Datasets · Energy（补全）", "href": "./energy.html", "count": 11, "sizes": {"超大型": 1, "大型": 2, "中型": 9, "小型": 15}, "tags": ["Power Systems", "Energy Statistics", "Solar Resource", "Wind Resource", "PV Fleet", "Generators", "EU System", "UK System", "Smart Meter", "Distribution", "Open Energy"]}, {"category": "Entertainment", "title": "Awesome Public Datasets · Entertainment（补全）", "h1": "Awesome Public Datasets · Entertainment（补全）", "href": "./entertainment.html", "count": 14, "sizes": {"超大型": 1, "大型": 2, "中型": 5, "小型": 25}, "tags": ["Movies/TV", "Subtitles/NLP", "Plots/Text", "Music", "Video"]}, {"category": "Finance", "title": "Awesome Public Datasets · Finance（补全）", "h1": "Awesome Public Datasets · Finance（补全）", "href": "./finance.html", "count": 13, "sizes": {"超大型": 1, "大型": 2, "中型": 3, "小型": 25}, "tags": ["Macro/Markets", "Filings/Disclosure", "International Finance", "Banking/Markets", "Europe Markets", "US Gov Rates", "Equities/FX/CFD", "Asset Pricing", "Data Aggregator", "Identifiers/Mapping", "Crypto/Market Data", "Crypto/On‑chain"]}, {"category": "Gis", "title": "Awesome Public Datasets · GIS（补全）", "h1": "Awesome Public Datasets · GIS（补全）", "href": "./gis.html", "count": 11, "sizes": {"超大型": 1, "大型": 4, "中型": 9, "小型": 13}, "tags": ["Base Maps", "Admin Boundaries", "Census/Carto", "Gazetteer/Names", "Places/Hierarchy", "Addresses", "Elevation (Topo)", "Imagery", "POI/Boundaries"]}, {"category": "Government", "title": "Awesome Public Datasets · Government（补全）", "h1": "Awesome Public Datasets · Government（补全）", "href": "./government.html", "count": 13, "sizes": {"超大型": 1, "大型": 2, "中型": 3, "小型": 25}, "tags": ["Portals", "Census/Population", "Transparency/Spending", "Transparency/FOIA", "Archives", "Transport", "Economy/Prices", "Health/Public Health", "Justice/Crime"]}, {"category": "Healthcare", "title": "Awesome Public Datasets · Healthcare（补全）", "h1": "Awesome Public Datasets · Healthcare（补全）", "href": "./healthcare.html", "count": 12, "sizes": {"超大型": 1, "大型": 2, "中型": 5, "小型": 21}, "tags": ["Cancer Genomics", "Cancer Registry", "Clinical Trials", "Critical Care EHR", "ICU/EHR", "Public Health", "Global Health", "Open FDA", "COVID-19", "Imaging", "EHR Synthetic"]}, {"category": "Imageprocessing", "title": "Awesome Public Datasets · ImageProcessing（补全）", "h1": "Awesome Public Datasets · ImageProcessing（补全）", "href": "./imageprocessing.html", "count": 14, "sizes": {"超大型": 1, "大型": 2, "中型": 1, "小型": 29}, "tags": ["Classical Images", "IQA", "Super-Resolution", "Restoration", "Segmentation/Saliency", "Segmentation", "Edges/Contours", "Denoising/Restoration"]}, {"category": "Literature", "title": "Awesome Public Datasets · Literature（补全）", "h1": "Awesome Public Datasets · Literature（补全）", "href": "./literature.html", "count": 17, "sizes": {"超大型": 1, "大型": 2, "中型": 21, "小型": 15}, "tags": ["Bibliographic Graph", "Publisher Index", "Scholarly Corpus", "Citation Open", "Aggregator", "OA Discovery", "Preprints", "Life Sci", "Life Sci OA", "CS Catalog", "CS/AI Graph", "Archived"]}, {"category": "Machinelearning", "title": "Awesome Public Datasets · MachineLearning（补全）", "h1": "Awesome Public Datasets · MachineLearning（补全）", "href": "./machinelearning.html", "count": 13, "sizes": {"超大型": 1, "大型": 2, "中型": 5, "小型": 23}, "tags": ["Repositories", "Time Series", "Vision (Classic)", "Vision (Images)", "Vision (Detection/Segm.)", "Vision (Large-scale)", "NLP (General)", "NLP (QA/Reading)", "Tabular Benchmarks"]}, {"category": "Museums", "title": "Awesome Public Datasets · Museums（补全）", "h1": "Awesome Public Datasets · Museums（补全）", "href": "./museums.html", "count": 10, "sizes": {"超大型": 1, "大型": 2, "中型": 5, "小型": 17}, "tags": ["Art Collections", "Galleries/Design", "Aggregators", "Vocabularies", "Smithsonian"]}, {"category": "Naturallanguage", "title": "Awesome Public Datasets · NaturalLanguage（补全）", "h1": "Awesome Public Datasets · NaturalLanguage（补全）", "href": "./naturallanguage.html", "count": 15, "sizes": {"超大型": 1, "大型": 4, "中型": 11, "小型": 19}, "tags": ["Text Corpora", "Lexical/Knowledge", "Lexical", "N-grams", "Parallel Corpora", "Monolingual Crawl", "Emails", "Embeddings", "Open Web", "Sentiment", "Parallel/General"]}, {"category": "Neuroscience", "title": "Awesome Public Datasets · Neuroscience（补全）", "h1": "Awesome Public Datasets · Neuroscience（补全）", "href": "./neuroscience.html", "count": 13, "sizes": {"超大型": 1, "大型": 4, "中型": 11, "小型": 15}, "tags": ["Neuroimaging/fMRI", "Neuroimaging/Atlas", "Neuroimaging/EEG/MEG", "Electrophysiology", "Neuroimaging/Repos", "Morphology", "Invasive/IEEG"]}, {"category": "Physics", "title": "Awesome Public Datasets · Physics（补全）", "h1": "Awesome Public Datasets · Physics（补全）", "href": "./physics.html", "count": 14, "sizes": {"超大型": 1, "大型": 10, "中型": 5, "小型": 17}, "tags": ["High-Energy Physics", "Astrophysics", "Astrometry", "Astronomy", "High-Energy Astrophysics", "CMB / Cosmology", "Gravitational Waves", "Neutron Scattering", "Neutron/X-ray", "Atomic/Optical", "Solar Physics"]}, {"category": "Prostatecancer", "title": "Awesome Public Datasets · ProstateCancer（补全）", "h1": "Awesome Public Datasets · ProstateCancer（补全）", "href": "./prostatecancer.html", "count": 11, "sizes": {"超大型": 1, "大型": 2, "中型": 3, "小型": 21}, "tags": ["Genomics", "Imaging‑MRI", "Imaging‑Segmentation", "Imaging‑Histology", "Registry/Outcomes", "Transcriptomics", "Synthetic"]}, {"category": "Psychology Cognition", "title": "Awesome Public Datasets · Psychology+Cognition（补全）", "h1": "Awesome Public Datasets · Psychology+Cognition（补全）", "href": "./psychology_cognition.html", "count": 12, "sizes": {"超大型": 1, "大型": 2, "中型": 5, "小型": 21}, "tags": ["Cognitive Neuroimaging", "Lifespan Imaging+Behavior", "Behavioral Battery", "Affect Norms", "Affect Images", "Lexical Norms", "Word Frequency", "Personality", "Development/Language", "Meta‑science", "Moral Cognition", "Emotion Lexicons"]}, {"category": "Publicdomains", "title": "Awesome Public Datasets · PublicDomains（补全）", "h1": "Awesome Public Datasets · PublicDomains（补全）", "href": "./publicdomains.html", "count": 11, "sizes": {"超大型": 3, "大型": 6, "中型": 11, "小型": 9}, "tags": ["Digital Library", "Open Media", "Open Texts", "Cultural Heritage", "Photography", "Search/Aggregator", "Digital Collections", "Scholarly"]}, {"category": "Searchengines", "title": "Awesome Public Datasets · SearchEngines（补全）", "h1": "Awesome Public Datasets · SearchEngines（补全）", "href": "./searchengines.html", "count": 11, "sizes": {"超大型": 3, "大型": 4, "中型": 7, "小型": 15}, "tags": ["Web Crawl", "Web Collection", "Historic Web", "IR Benchmarks", "Query Logs", "Query‑URL Pairs", "Learning to Rank"]}, {"category": "Socialnetworks", "title": "Awesome Public Datasets · SocialNetworks（补全）", "h1": "Awesome Public Datasets · SocialNetworks（补全）", "href": "./socialnetworks.html", "count": 20, "sizes": {"超大型": 1, "大型": 2, "中型": 9, "小型": 33}, "tags": ["Collections", "Face-to-face", "Online Social", "Location-based", "Trust/Signed", "Regional Social", "Q&A / Community", "Dev / Social Coding", "Social Media", "Social Graph", "Email/Social"]}, {"category": "Socialsciences", "title": "Awesome Public Datasets · SocialSciences（补全）", "h1": "Awesome Public Datasets · SocialSciences（补全）", "href": "./socialsciences.html", "count": 16, "sizes": {"超大型": 1, "大型": 3, "中型": 3, "小型": 31}, "tags": ["Surveys (US)", "Surveys (Intl)", "Longitudinal (US)", "Longitudinal (UK)", "Longitudinal (DE)", "Demography/Health", "Census Microdata", "Archives", "Archives (UK)"]}, {"category": "Software", "title": "Awesome Public Datasets · Software（补全）", "h1": "Awesome Public Datasets · Software（补全）", "href": "./software.html", "count": 16, "sizes": {"超大型": 3, "大型": 6, "中型": 9, "小型": 21}, "tags": ["Code Archive", "Code Events", "Code Graph", "Code on BQ", "Package Graph", "Vulnerabilities", "Package Registry", "Usage/Popularity", "Code ML"]}, {"category": "Sports", "title": "Awesome Public Datasets · Sports（补全）", "h1": "Awesome Public Datasets · Sports（补全）", "href": "./sports.html", "count": 17, "sizes": {"超大型": 1, "大型": 2, "中型": 1, "小型": 35}, "tags": ["Aggregators", "Soccer", "Basketball", "Baseball", "American Football", "Hockey", "Cricket", "Rugby", "Tennis", "Olympics", "Running"]}, {"category": "Timeseries", "title": "Awesome Public Datasets · TimeSeries（补全）", "h1": "Awesome Public Datasets · TimeSeries（补全）", "href": "./timeseries.html", "count": 14, "sizes": {"超大型": 1, "大型": 2, "中型": 1, "小型": 29}, "tags": ["Classification (Uni‑variate)", "Classification (Multi‑variate)", "Forecasting (Repository)", "Forecasting (Competitions)", "Forecasting (Retail)", "Forecasting (Tourism)", "Forecasting (Electricity)", "Anomaly Detection", "Economics/Finance", "IoT/Smart Home", "IoT/Appliances", "Air Quality"]}, {"category": "Transportation", "title": "Awesome Public Datasets · Transportation（补全）", "h1": "Awesome Public Datasets · Transportation（补全）", "href": "./transportation.html", "count": 16, "sizes": {"超大型": 1, "大型": 2, "中型": 9, "小型": 25}, "tags": ["Aviation / Flights", "Aviation / On‑time", "Transit / GTFS", "Transit / City API", "Road Traffic", "Road Safety", "Taxis / Ride‑hail", "Micromobility", "Maritime", "Multimodal / EU", "US Multimodal"]}];
+  const grid = document.querySelector('.grid');
+  const q = document.querySelector('#q');
+  const sizeFilter = document.querySelector('#size');
+  const catFilter = document.querySelector('#cat');
+  const cats = [...new Set(RAW.map(r => r.category))].sort((a,b)=>a.localeCompare(b));
+  catFilter.innerHTML = '<option value="">All Categories</option>' + cats.map(c => `<option>${c}</option>`).join('');
+
+  function badge(label, n){
+    let cls = 'chip';
+    if(label.includes('超大型')) cls+=' red'; else if(label.includes('大型')) cls+=' orange';
+    else if(label.includes('中型')) cls+=' amber'; else if(label.includes('小型')) cls+=' green';
+    return `<span class="${cls}">${label}: ${n||0}</span>`;
+  }
+  function render(){
+    const key = q.value.trim().toLowerCase();
+    const sz = sizeFilter.value;
+    const cat = catFilter.value;
+    const rows = RAW.filter(r => {
+      const okCat = !cat || r.category === cat;
+      const blob = (r.category + ' ' + r.title + ' ' + r.h1).toLowerCase();
+      const okQ = !key || blob.includes(key);
+      const okSz = !sz || (r.sizes[sz] && r.sizes[sz] > 0);
+      return okCat && okQ && okSz;
+    });
+    grid.innerHTML = rows.map(r => `
+      <div class='card' tabindex='0'>
+        <div class='head'>
+          <div class='name'>${r.category}</div>
+          <a class='open' href='${r.href}' target='_blank'>Open</a>
+        </div>
+        <div class='meta'>
+          <span class='badge'>Datasets <span class='count'>${r.count}</span></span>
+        </div>
+        <div class='sizes'>
+          ${badge('超大型', r.sizes['超大型'])}
+          ${badge('大型', r.sizes['大型'])}
+          ${badge('中型', r.sizes['中型'])}
+          ${badge('小型', r.sizes['小型'])}
+        </div>
+        ${r.tags && r.tags.length ? ('<div class="tags">' + r.tags.map(t=>`<span class='tag'>${t}</span>`).join(' ') + '</div>') : ''}
+      </div>
+    `).join('');
+  }
+  q.addEventListener('input', render);
+  sizeFilter.addEventListener('change', render);
+  catFilter.addEventListener('change', render);
+  render();
+</script>
+
+</html>

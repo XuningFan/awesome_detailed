@@ -1,0 +1,346 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · CyberSecurity（补全）</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hirigino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · CyberSecurity（补全）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>IDS Benchmarks</td>
+      <td>KDD Cup 1999</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈5–10 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html" target="_blank" rel="noopener">http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>经典但过时；仍用于教学</td>
+      <td>网络连接特征（表格）</td>
+      <td>入侵检测基线</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>IDS Benchmarks</td>
+      <td>NSL-KDD</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈5 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.unb.ca/cic/datasets/nsl.html" target="_blank" rel="noopener">https://www.unb.ca/cic/datasets/nsl.html</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>KDD99 改进版，去重与难度分层</td>
+      <td>表格/连接特征</td>
+      <td>IDS 教学与基线</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>IDS Benchmarks</td>
+      <td>ISCX 2012 (UNB)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.unb.ca/cic/datasets/ids.html" target="_blank" rel="noopener">https://www.unb.ca/cic/datasets/ids.html</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>含真实背景流量与攻击</td>
+      <td>pcap/NetFlow/标注</td>
+      <td>入侵检测研究</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>IDS Benchmarks</td>
+      <td>UNSW-NB15</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://research.unsw.edu.au/projects/unsw-nb15-dataset" target="_blank" rel="noopener">https://research.unsw.edu.au/projects/unsw-nb15-dataset</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>现代合成/真实混合攻击集合</td>
+      <td>流量/特征/标注</td>
+      <td>IDS 评测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>IDS Benchmarks</td>
+      <td>CIC-IDS 2017</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈150 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.unb.ca/cic/datasets/ids-2017.html" target="_blank" rel="noopener">https://www.unb.ca/cic/datasets/ids-2017.html</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>多种现代攻击场景</td>
+      <td>流量/NetFlow/标注</td>
+      <td>IDS 评测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>IDS Benchmarks</td>
+      <td>CSE-CIC-IDS2018</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈200 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.unb.ca/cic/datasets/ids-2018.html" target="_blank" rel="noopener">https://www.unb.ca/cic/datasets/ids-2018.html</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>更全面的攻击类型</td>
+      <td>流量/NetFlow/标注</td>
+      <td>IDS 评测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>DDoS</td>
+      <td>CICDDoS2019</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈200 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.unb.ca/cic/datasets/ddos-2019.html" target="_blank" rel="noopener">https://www.unb.ca/cic/datasets/ddos-2019.html</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>多向量 DDoS 攻击</td>
+      <td>流量/NetFlow/标注</td>
+      <td>DDoS 检测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>Botnet</td>
+      <td>CTU-13 Botnet Dataset</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.stratosphereips.org/datasets-ctu13" target="_blank" rel="noopener">https://www.stratosphereips.org/datasets-ctu13</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>不同僵尸网络场景</td>
+      <td>pcap/NetFlow/标注</td>
+      <td>恶意流量检测/分类</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>Botnet</td>
+      <td>Stratosphere IPS Datasets</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–300 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.stratosphereips.org/datasets" target="_blank" rel="noopener">https://www.stratosphereips.org/datasets</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>持续发布的恶意流量场景</td>
+      <td>pcap/NetFlow/日志/标注</td>
+      <td>行为分析/检测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>Academic</td>
+      <td>Kyoto 2006+</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="http://www.takakura.com/Kyoto_data/" target="_blank" rel="noopener">http://www.takakura.com/Kyoto_data/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>长期监测日志与攻击记录</td>
+      <td>网络日志/特征</td>
+      <td>异常检测/IDS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>Host-based</td>
+      <td>ADFA-LD / ADFA-WD</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–20 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://research.unsw.edu.au/projects/adfa-ids-datasets" target="_blank" rel="noopener">https://research.unsw.edu.au/projects/adfa-ids-datasets</a></td>
+      <td>⭐⭐ 中</td>
+      <td>主机级系统调用/Windows 日志</td>
+      <td>主机入侵/异常检测</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>Malware</td>
+      <td>Microsoft Malware Classification (BIG 2015)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.kaggle.com/c/malware-classification" target="_blank" rel="noopener">https://www.kaggle.com/c/malware-classification</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>微软提供的恶意样本特征</td>
+      <td>二进制/特征/标签</td>
+      <td>恶意家族分类</td>
+      <td>需 Kaggle 账户</td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>Malware</td>
+      <td>EMBER (Endgame Malware BEnchmark for Research)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50 GB</td>
+      <td>开放访问</td>
+      <td>GitHub</td>
+      <td><a href="https://github.com/elastic/ember" target="_blank" rel="noopener">https://github.com/elastic/ember</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>可复现实验的恶意软件特征集</td>
+      <td>特征/恶意与良性标签</td>
+      <td>经典特征基准</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>Android Malware</td>
+      <td>Drebin</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–20 GB</td>
+      <td>注册访问</td>
+      <td>Web</td>
+      <td><a href="https://www.sec.cs.tu-bs.de/~danarp/drebin/" target="_blank" rel="noopener">https://www.sec.cs.tu-bs.de/~danarp/drebin/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>Android 恶意软件静态特征</td>
+      <td>APK/权限/调用</td>
+      <td>移动安全研究</td>
+      <td>需协议</td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>Android Malware</td>
+      <td>AndroZoo</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB</td>
+      <td>部分受控</td>
+      <td>Web / Request</td>
+      <td><a href="https://androzoo.uni.lu/" target="_blank" rel="noopener">https://androzoo.uni.lu/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>海量 Android APK 聚合</td>
+      <td>APK/元数据/标签</td>
+      <td>恶意检测/家族研究</td>
+      <td>需申请与合规</td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>Threat Intelligence</td>
+      <td>MISP Project (datasets & feeds)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://www.misp-project.org/" target="_blank" rel="noopener">https://www.misp-project.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>开源威胁情报平台与公开样例</td>
+      <td>IOC/事件/上下文</td>
+      <td>威胁共享与关联</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>Threat Intelligence</td>
+      <td>AlienVault OTX (public pulses)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://otx.alienvault.com/" target="_blank" rel="noopener">https://otx.alienvault.com/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>社区 IOC 共享（公开脉冲）</td>
+      <td>IOC/关联/标签</td>
+      <td>威胁情报</td>
+      <td>需账户</td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>DNS</td>
+      <td>DNS-OARC Datasets</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1 TB</td>
+      <td>部分受控</td>
+      <td>Web / Request</td>
+      <td><a href="https://www.dns-oarc.net/" target="_blank" rel="noopener">https://www.dns-oarc.net/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>根与权威/解析相关数据</td>
+      <td>查询/响应/pcap</td>
+      <td>DNS 安全/性能</td>
+      <td>部分受限</td>
+    </tr>
+    <tr>
+      <td>CyberSecurity</td>
+      <td>Darknet</td>
+      <td>UCSD Network Telescope</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–5 TB</td>
+      <td>部分受控</td>
+      <td>Web / Request</td>
+      <td><a href="https://www.caida.org/projects/network_telescope/" target="_blank" rel="noopener">https://www.caida.org/projects/network_telescope/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>未分配空间的恶意扫描/背散射</td>
+      <td>事件/端口/时序</td>
+      <td>互联网威胁观测</td>
+      <td>需申请</td>
+    </tr>
+  </tbody>
+</table></body></html>

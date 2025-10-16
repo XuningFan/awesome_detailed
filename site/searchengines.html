@@ -1,0 +1,218 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · SearchEngines（补全）</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · SearchEngines（补全）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SearchEngines</td>
+      <td>Web Crawl</td>
+      <td>Common Crawl (WARC + Derivatives)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#dc2626;margin-right:6px;vertical-align:middle;'></span>超大型</td>
+      <td>超大型</td>
+      <td>≈5+ PB（累计）</td>
+      <td>开放访问</td>
+      <td>Web / S3</td>
+      <td><a href="https://commoncrawl.org/" target="_blank" rel="noopener">https://commoncrawl.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>开放网页抓取；可派生文本/链接图</td>
+      <td>WARC/HTML/文本/外链</td>
+      <td>预训练、索引、去重、IR</td>
+      <td>月度抓取；需自行抽取清洗</td>
+    </tr>
+    <tr>
+      <td>SearchEngines</td>
+      <td>Web Crawl</td>
+      <td>C4: Colossal Clean Crawled Corpus（基于 CC）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10 TB（英文版）</td>
+      <td>开放访问</td>
+      <td>TFDS / GCS</td>
+      <td><a href="https://www.tensorflow.org/datasets/catalog/c4" target="_blank" rel="noopener">https://www.tensorflow.org/datasets/catalog/c4</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>从 Common Crawl 清洗得到的大规模文本</td>
+      <td>纯文本/文档</td>
+      <td>NLP/检索/预训练</td>
+      <td>为派生语料，随版本变化</td>
+    </tr>
+    <tr>
+      <td>SearchEngines</td>
+      <td>Web Collection</td>
+      <td>ClueWeb12（Lemur Project）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈5–10 TB（压缩）</td>
+      <td>注册访问</td>
+      <td>Web / Request</td>
+      <td><a href="https://www.lemurproject.org/clueweb12/" target="_blank" rel="noopener">https://www.lemurproject.org/clueweb12/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>学术界广泛使用的网页语料</td>
+      <td>WARC/HTML</td>
+      <td>TREC Web/adhoc/学习排序</td>
+      <td>需学术申请与协议</td>
+    </tr>
+    <tr>
+      <td>SearchEngines</td>
+      <td>Web Collection</td>
+      <td>ClueWeb22（Lemur Project）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–20 TB（压缩）</td>
+      <td>注册访问</td>
+      <td>Web / Request</td>
+      <td><a href="https://www.lemurproject.org/clueweb22.php" target="_blank" rel="noopener">https://www.lemurproject.org/clueweb22.php</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>更近期的大规模网页集合</td>
+      <td>WARC/HTML</td>
+      <td>IR/预训练/评测</td>
+      <td>需学术申请与协议</td>
+    </tr>
+    <tr>
+      <td>SearchEngines</td>
+      <td>Historic Web</td>
+      <td>TREC GOV2 Collection</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈500 GB</td>
+      <td>注册访问</td>
+      <td>NIST / Request</td>
+      <td><a href="https://ir.nist.gov/gov2.html" target="_blank" rel="noopener">https://ir.nist.gov/gov2.html</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>美国政府域名网页集合（历史）</td>
+      <td>WARC/HTML</td>
+      <td>基准检索/结构化抽取</td>
+      <td>需签署许可</td>
+    </tr>
+    <tr>
+      <td>SearchEngines</td>
+      <td>IR Benchmarks</td>
+      <td>MS MARCO (passage/document/v2)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–500 GB（多子集）</td>
+      <td>注册访问</td>
+      <td>Web / Application</td>
+      <td><a href="https://microsoft.github.io/msmarco/" target="_blank" rel="noopener">https://microsoft.github.io/msmarco/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>真实查询‑文档/段落与判断，DL/TREC 使用</td>
+      <td>文档/段落/查询/相关性</td>
+      <td>检索/阅读理解/重排序</td>
+      <td>需同意条款；含点击/匿名化派生</td>
+    </tr>
+    <tr>
+      <td>SearchEngines</td>
+      <td>IR Benchmarks</td>
+      <td>TREC Collections（by NIST）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈0.5–5 TB（分赛道）</td>
+      <td>注册访问</td>
+      <td>Web / NIST</td>
+      <td><a href="https://trec.nist.gov/data.html" target="_blank" rel="noopener">https://trec.nist.gov/data.html</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>信息检索权威评测数据（Web/News/QA 等）</td>
+      <td>文档/查询/标注</td>
+      <td>系统评测、IR研究</td>
+      <td>需协议/部分收费</td>
+    </tr>
+    <tr>
+      <td>SearchEngines</td>
+      <td>IR Benchmarks</td>
+      <td>BEIR: Heterogeneous Zero‑shot IR Benchmark</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–200 GB</td>
+      <td>开放访问</td>
+      <td>GitHub / HuggingFace</td>
+      <td><a href="https://github.com/beir-cellar/beir" target="_blank" rel="noopener">https://github.com/beir-cellar/beir</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>统一接口的多领域检索基准集合</td>
+      <td>多域语料/查询/标注</td>
+      <td>零样本/通用检索评测</td>
+      <td>覆盖20+ 数据集</td>
+    </tr>
+    <tr>
+      <td>SearchEngines</td>
+      <td>Query Logs</td>
+      <td>AOL Query Log 2006（匿名化）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈20 GB</td>
+      <td>开放访问</td>
+      <td>Web（镜像）</td>
+      <td><a href="http://www.rice.edu/~as343/papers/aol-data/" target="_blank" rel="noopener">http://www.rice.edu/~as343/papers/aol-data/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>早期真实查询日志（隐私风险已知）</td>
+      <td>查询/点击/时间戳</td>
+      <td>点击模型/拼写纠错</td>
+      <td>强伦理注意；官方源已下线</td>
+    </tr>
+    <tr>
+      <td>SearchEngines</td>
+      <td>Query‑URL Pairs</td>
+      <td>ORCAS (Open Resource for Click‑And‑Search)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50 GB</td>
+      <td>开放访问</td>
+      <td>Web / Download</td>
+      <td><a href="https://microsoft.github.io/msmarco/ORCAS/" target="_blank" rel="noopener">https://microsoft.github.io/msmarco/ORCAS/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>Bing 查询‑URL 配对（匿名聚合）</td>
+      <td>查询/URL/频次</td>
+      <td>检索/建议/点击模型</td>
+      <td>与 MS MARCO 文档集合关联</td>
+    </tr>
+    <tr>
+      <td>SearchEngines</td>
+      <td>Learning to Rank</td>
+      <td>LETOR 3.0/4.0（Lemur Project）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–20 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.microsoft.com/en-us/research/project/letor-learning-rank-information-retrieval/" target="_blank" rel="noopener">https://www.microsoft.com/en-us/research/project/letor-learning-rank-information-retrieval/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>早期学习排序标准数据集</td>
+      <td>特征/查询‑文档/标签</td>
+      <td>LTR 基线与教学</td>
+      <td>对 ClueWeb/GOV2 有依赖</td>
+    </tr>
+  </tbody>
+</table></body></html>

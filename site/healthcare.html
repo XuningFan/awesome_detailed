@@ -1,0 +1,234 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · Healthcare（补全）</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · Healthcare（补全）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Healthcare</td>
+      <td>Cancer Genomics</td>
+      <td>NCI Genomic Data Commons (GDC)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB</td>
+      <td>部分受控</td>
+      <td>Web / API</td>
+      <td><a href="https://portal.gdc.cancer.gov/" target="_blank" rel="noopener">https://portal.gdc.cancer.gov/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>肿瘤多组学与临床配套平台（含 TCGA/TARGET 等）</td>
+      <td>测序/变异/表达/临床</td>
+      <td>受控数据需 dbGaP 授权</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Healthcare</td>
+      <td>Cancer Registry</td>
+      <td>SEER Program (Surveillance, Epidemiology, and End Results)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–500 GB</td>
+      <td>注册访问</td>
+      <td>Web</td>
+      <td><a href="https://seer.cancer.gov/data/" target="_blank" rel="noopener">https://seer.cancer.gov/data/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>美国癌症发病/生存登记项目</td>
+      <td>表格/微观记录</td>
+      <td>需注册/同意使用协议</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Healthcare</td>
+      <td>Clinical Trials</td>
+      <td>ClinicalTrials.gov</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈500 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://clinicaltrials.gov/" target="_blank" rel="noopener">https://clinicaltrials.gov/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>全球临床试验注册与结果披露</td>
+      <td>结构化注册表/文本</td>
+      <td>证据合成、药物再定位</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Healthcare</td>
+      <td>Critical Care EHR</td>
+      <td>MIMIC-III / MIMIC-IV（PhysioNet）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈2 TB</td>
+      <td>受控访问</td>
+      <td>Web / PhysioNet</td>
+      <td><a href="https://physionet.org/" target="_blank" rel="noopener">https://physionet.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>ICU 电子病历与监护数据</td>
+      <td>结构化EHR/时序/文本/波形</td>
+      <td>需 CITI 培训与数据使用协议</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Healthcare</td>
+      <td>ICU/EHR</td>
+      <td>eICU Collaborative Research Database（PhysioNet）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1 TB</td>
+      <td>受控访问</td>
+      <td>Web / PhysioNet</td>
+      <td><a href="https://physionet.org/content/eicu-crd/" target="_blank" rel="noopener">https://physionet.org/content/eicu-crd/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>多中心 ICU 数据库</td>
+      <td>EHR/护理/用药/时序</td>
+      <td>需培训/协议</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Healthcare</td>
+      <td>Public Health</td>
+      <td>CDC Data Portal（含 WONDER 等）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈数十TB（分散）</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://data.cdc.gov/" target="_blank" rel="noopener">https://data.cdc.gov/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>公共卫生监测与指标库</td>
+      <td>表格/时间序列</td>
+      <td>流行病学/政策评估</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Healthcare</td>
+      <td>Global Health</td>
+      <td>WHO Global Health Observatory (GHO)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://www.who.int/data/gho" target="_blank" rel="noopener">https://www.who.int/data/gho</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球健康指标与元数据</td>
+      <td>表格/时间序列</td>
+      <td>国际比较/SDG 监测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Healthcare</td>
+      <td>Global Health</td>
+      <td>IHME – Global Health Data Exchange (GHDx)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈数 TB（分散）</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://ghdx.healthdata.org/" target="_blank" rel="noopener">https://ghdx.healthdata.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球疾病负担 (GBD) 等项目数据入口</td>
+      <td>表格/模型输出</td>
+      <td>健康负担/风险因子</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Healthcare</td>
+      <td>Open FDA</td>
+      <td>openFDA Datasets & API</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–300 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://open.fda.gov/data/" target="_blank" rel="noopener">https://open.fda.gov/data/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>不良事件、药械食品相关监管数据</td>
+      <td>结构化/文本</td>
+      <td>药品安全/信号检测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Healthcare</td>
+      <td>COVID-19</td>
+      <td>Johns Hopkins CSSE COVID-19 (archival)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–50 GB</td>
+      <td>开放访问</td>
+      <td>GitHub</td>
+      <td><a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener">https://github.com/CSSEGISandData/COVID-19</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球新冠疫情时空数据（历史）</td>
+      <td>表格/时间序列/地理</td>
+      <td>疫情分析/建模</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Healthcare</td>
+      <td>Imaging</td>
+      <td>The Cancer Imaging Archive (TCIA)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈20 TB</td>
+      <td>部分受控</td>
+      <td>Web</td>
+      <td><a href="https://www.cancerimagingarchive.net/" target="_blank" rel="noopener">https://www.cancerimagingarchive.net/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>多癌种医学影像共享平台</td>
+      <td>DICOM/影像/标注</td>
+      <td>项目分级别下载/使用条款</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Healthcare</td>
+      <td>EHR Synthetic</td>
+      <td>Synthea (Synthetic Patient Generator)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–50 GB（可自生）</td>
+      <td>开放访问</td>
+      <td>Web / GitHub</td>
+      <td><a href="https://synthea.mitre.org/" target="_blank" rel="noopener">https://synthea.mitre.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>基于规则与统计的合成电子病历</td>
+      <td>EHR/就诊/药物/病程</td>
+      <td>隐私友好、用于方法开发</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table></body></html>

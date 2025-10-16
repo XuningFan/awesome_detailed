@@ -1,0 +1,218 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · Energy（补全）</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · Energy（补全）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Energy</td>
+      <td>Power Systems</td>
+      <td>Open Power System Data (OPSD)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈200 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://open-power-system-data.org/" target="_blank" rel="noopener">https://open-power-system-data.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>电力系统开源数据（负荷/发电/天气/市场）</td>
+      <td>表格/时序</td>
+      <td>能源系统建模</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Energy</td>
+      <td>Energy Statistics</td>
+      <td>EIA Open Data (US Energy Information Administration)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈200 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://www.eia.gov/opendata/" target="_blank" rel="noopener">https://www.eia.gov/opendata/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>美国能源生产/消费/价格/库存</td>
+      <td>时序/表格</td>
+      <td>能源经济与政策</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Energy</td>
+      <td>Solar Resource</td>
+      <td>NREL NSRDB</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10 TB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://nsrdb.nrel.gov/" target="_blank" rel="noopener">https://nsrdb.nrel.gov/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>太阳辐照度/气象长时序（典型气象年）</td>
+      <td>时序/栅格</td>
+      <td>光伏选址、产能模拟</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Energy</td>
+      <td>Wind Resource</td>
+      <td>NREL WIND Toolkit</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈50 TB</td>
+      <td>开放访问</td>
+      <td>Web / AWS</td>
+      <td><a href="https://www.nrel.gov/grid/wind-toolkit.html" target="_blank" rel="noopener">https://www.nrel.gov/grid/wind-toolkit.html</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>风资源建模/风速功率时间序列</td>
+      <td>时序/网格</td>
+      <td>风电选址/电网研究</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Energy</td>
+      <td>PV Fleet</td>
+      <td>NREL PVDAQ</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–2 TB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://data.nrel.gov/submissions/457" target="_blank" rel="noopener">https://data.nrel.gov/submissions/457</a></td>
+      <td>⭐⭐ 高</td>
+      <td>实地光伏阵列监测数据</td>
+      <td>时序/站点元数据</td>
+      <td>性能诊断/退化分析</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Energy</td>
+      <td>Generators</td>
+      <td>Global Power Plant Database (WRI)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–50 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://datasets.wri.org/dataset/globalpowerplantdatabase" target="_blank" rel="noopener">https://datasets.wri.org/dataset/globalpowerplantdatabase</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球电厂机组清单（位置/装机/燃料）</td>
+      <td>矢量/表格</td>
+      <td>电源结构/减排研究</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Energy</td>
+      <td>EU System</td>
+      <td>ENTSO-E Transparency Platform</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10 TB</td>
+      <td>注册访问</td>
+      <td>Web / API</td>
+      <td><a href="https://transparency.entsoe.eu/" target="_blank" rel="noopener">https://transparency.entsoe.eu/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>欧洲互联电网透明度平台</td>
+      <td>时序/市场/平衡/运行</td>
+      <td>系统分析/市场研究</td>
+      <td>需注册与条款</td>
+    </tr>
+    <tr>
+      <td>Energy</td>
+      <td>UK System</td>
+      <td>National Grid ESO Open Data</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://data.nationalgrideso.com/" target="_blank" rel="noopener">https://data.nationalgrideso.com/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>英国电网运行/需求/平衡</td>
+      <td>时序/CSV/API</td>
+      <td>系统运行与预测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Energy</td>
+      <td>Smart Meter</td>
+      <td>UK Power Networks SmartMeter Energy Disaggregation (REFIT)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–50 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://pureportal.strath.ac.uk/en/datasets/refit-electrical-load-measurements-cleaned" target="_blank" rel="noopener">https://pureportal.strath.ac.uk/en/datasets/refit-electrical-load-measurements-cleaned</a></td>
+      <td>⭐⭐ 中</td>
+      <td>英国家庭电器级用电数据集（非侵入式负载）</td>
+      <td>时时功率/事件</td>
+      <td>能效/分解算法</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Energy</td>
+      <td>Distribution</td>
+      <td>Pecan Street Dataport (research access)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB</td>
+      <td>部分受控</td>
+      <td>Web / Request</td>
+      <td><a href="https://www.pecanstreet.org/dataport/" target="_blank" rel="noopener">https://www.pecanstreet.org/dataport/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>美国家庭/社区用能高频数据</td>
+      <td>时序/电器级/气象</td>
+      <td>负荷分解/需求响应</td>
+      <td>需申请/费用可能</td>
+    </tr>
+    <tr>
+      <td>Energy</td>
+      <td>Open Energy</td>
+      <td>OpenEI (Open Energy Information)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–100 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://openei.org/" target="_blank" rel="noopener">https://openei.org/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>能源数据与知识库聚合</td>
+      <td>多主题/表格/API</td>
+      <td>广泛资料与链接</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table></body></html>

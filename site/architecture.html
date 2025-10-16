@@ -1,0 +1,202 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · Architecture（补全）</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · Architecture（补全）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Architecture</td>
+      <td>Geospatial</td>
+      <td>OpenStreetMap (Buildings)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈20 TB（行星级提取）</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://www.openstreetmap.org/" target="_blank" rel="noopener">https://www.openstreetmap.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>众包地理权威，建筑/道路/POI 高频使用</td>
+      <td>矢量建筑/道路/POI</td>
+      <td>城市建模、三维建模、选址</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Architecture</td>
+      <td>Geospatial</td>
+      <td>Google Open Buildings</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://sites.research.google/open-buildings/" target="_blank" rel="noopener">https://sites.research.google/open-buildings/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>大范围建筑轮廓（多国，强调非洲）</td>
+      <td>建筑轮廓（矢量）</td>
+      <td>城市形态学、建筑密度</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Architecture</td>
+      <td>Geospatial</td>
+      <td>Microsoft Global ML Building Footprints</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈500 GB</td>
+      <td>开放访问</td>
+      <td>GitHub / Azure</td>
+      <td><a href="https://github.com/microsoft/GlobalMLBuildingFootprints" target="_blank" rel="noopener">https://github.com/microsoft/GlobalMLBuildingFootprints</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>多国建筑轮廓，机器学习提取</td>
+      <td>建筑轮廓（矢量）</td>
+      <td>城市分析、制图</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Architecture</td>
+      <td>Energy/Simulation</td>
+      <td>DOE Commercial Reference Buildings</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈5 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://www.energy.gov/eere/buildings/commercial-reference-buildings" target="_blank" rel="noopener">https://www.energy.gov/eere/buildings/commercial-reference-buildings</a></td>
+      <td>⭐⭐ 中</td>
+      <td>建筑能耗仿真标准样本（EnergyPlus 模型）</td>
+      <td>建筑能耗参数/模型</td>
+      <td>能耗模拟、负荷预测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Architecture</td>
+      <td>Urban/Open Data</td>
+      <td>NYC Open Data – Buildings/PLUTO</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://opendata.cityofnewyork.us/" target="_blank" rel="noopener">https://opendata.cityofnewyork.us/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>纽约市楼宇、地籍、能耗等公开数据</td>
+      <td>地块/楼宇/能耗/许可</td>
+      <td>规划、地理与能耗研究</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Architecture</td>
+      <td>Geospatial</td>
+      <td>OpenBuildingMap（OSM 衍生）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web / Tiles / API</td>
+      <td><a href="https://openbuildingmap.org/" target="_blank" rel="noopener">https://openbuildingmap.org/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>面向建筑的 OSM 衍生服务</td>
+      <td>建筑瓦片/要素</td>
+      <td>制图与浏览</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Architecture</td>
+      <td>Cadastral</td>
+      <td>OpenAddresses</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈200 GB</td>
+      <td>开放访问</td>
+      <td>Web / GitHub</td>
+      <td><a href="https://openaddresses.io/" target="_blank" rel="noopener">https://openaddresses.io/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球地址开源聚合（与楼宇/地块关联）</td>
+      <td>地址点/线</td>
+      <td>地理编码、建筑地址匹配</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Architecture</td>
+      <td>Housing/Energy</td>
+      <td>UK EPC Open Data</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://epc.opendatacommunities.org/" target="_blank" rel="noopener">https://epc.opendatacommunities.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>英国住宅/商业能源性能证书</td>
+      <td>建筑能效/指标</td>
+      <td>能耗基准、改造评估</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Architecture</td>
+      <td>3D/LiDAR（支撑）</td>
+      <td>USGS 3DEP LiDAR</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#fb923c;margin-right:6px;vertical-align:middle;'></span>大型</td>
+      <td>大型</td>
+      <td>≈100 TB+（分州）</td>
+      <td>开放访问</td>
+      <td>Web / AWS / FTP</td>
+      <td><a href="https://www.usgs.gov/3d-elevation-program" target="_blank" rel="noopener">https://www.usgs.gov/3d-elevation-program</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>高密度地形与建筑高程（间接支持建筑高度）</td>
+      <td>点云/DEM</td>
+      <td>三维城市/建筑高度推断</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Architecture</td>
+      <td>Urban Atlas</td>
+      <td>Copernicus Urban Atlas</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB（分区）</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://land.copernicus.eu/local/urban-atlas" target="_blank" rel="noopener">https://land.copernicus.eu/local/urban-atlas</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>欧洲城市土地利用（与建筑空间结构相关）</td>
+      <td>栅格/矢量</td>
+      <td>城市规划研究</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table></body></html>

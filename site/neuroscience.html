@@ -1,0 +1,250 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · Neuroscience（补全）</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · Neuroscience（补全）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Neuroscience</td>
+      <td>Neuroimaging/fMRI</td>
+      <td>Human Connectome Project (HCP)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB</td>
+      <td>注册访问</td>
+      <td>Web / S3（部分）</td>
+      <td><a href="https://www.humanconnectome.org/study/hcp-young-adult/document/500-subjects-release" target="_blank" rel="noopener">https://www.humanconnectome.org/study/hcp-young-adult/document/500-subjects-release</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>高质量人脑连接组影像（结构/功能/扩散）</td>
+      <td>fMRI/dMRI/T1/T2/行为</td>
+      <td>大样本连接组；需注册并同意条款</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neuroscience</td>
+      <td>Neuroimaging/fMRI</td>
+      <td>OpenNeuro（原 OpenfMRI）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–100 TB（持续增长）</td>
+      <td>开放访问</td>
+      <td>Web / CLI / API</td>
+      <td><a href="https://openneuro.org/" target="_blank" rel="noopener">https://openneuro.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>面向 BIDS 的开放神经影像共享平台</td>
+      <td>BIDS/fMRI/MEG/EEG/行为</td>
+      <td>复现、方法学、跨任务对比</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neuroscience</td>
+      <td>Neuroimaging/Atlas</td>
+      <td>Allen Brain Atlas（Human/Mouse）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–5 TB（按子项目）</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://portal.brain-map.org/" target="_blank" rel="noopener">https://portal.brain-map.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>多模态脑图谱：转录组/解剖/连接</td>
+      <td>成像/基因表达/细胞类型</td>
+      <td>神经回路与细胞图谱</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neuroscience</td>
+      <td>Neuroimaging/fMRI</td>
+      <td>ADNI – Alzheimer’s Disease Neuroimaging Initiative</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–20 TB</td>
+      <td>注册访问</td>
+      <td>Web（LONI）</td>
+      <td><a href="https://adni.loni.usc.edu/data-samples/access-data/" target="_blank" rel="noopener">https://adni.loni.usc.edu/data-samples/access-data/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>阿尔茨海默病多模态队列</td>
+      <td>MRI/PET/临床/遗传</td>
+      <td>需申请/数据使用协议</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neuroscience</td>
+      <td>Neuroimaging/fMRI</td>
+      <td>OASIS (Open Access Series of Imaging Studies)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–5 TB</td>
+      <td>开放/注册混合</td>
+      <td>Web（LONI/下载）</td>
+      <td><a href="https://www.oasis-brains.org/" target="_blank" rel="noopener">https://www.oasis-brains.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>健康老化与痴呆相关影像</td>
+      <td>MRI/临床/认知</td>
+      <td>多批次数据；部分需注册</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neuroscience</td>
+      <td>Neuroimaging/EEG/MEG</td>
+      <td>DANDI Archive（NWB/BIDS）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB（持续增长）</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://dandiarchive.org/" target="_blank" rel="noopener">https://dandiarchive.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>基于 NWB/BIDS 的电生理与影像共享</td>
+      <td>ECoG/EEG/行为/成像</td>
+      <td>开放神经数据生态</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neuroscience</td>
+      <td>Electrophysiology</td>
+      <td>TUH EEG Corpus (Temple University Hospital)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–20 TB</td>
+      <td>注册访问</td>
+      <td>Web / SFTP</td>
+      <td><a href="https://www.isip.piconepress.com/projects/tuh_eeg/html/downloads.shtml" target="_blank" rel="noopener">https://www.isip.piconepress.com/projects/tuh_eeg/html/downloads.shtml</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球使用最广的临床 EEG 库之一</td>
+      <td>EEG/临床标签</td>
+      <td>癫痫检测、事件分类</td>
+      <td>需协议/部分子集收费</td>
+    </tr>
+    <tr>
+      <td>Neuroscience</td>
+      <td>Electrophysiology</td>
+      <td>CHB-MIT Scalp EEG Database</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–500 GB</td>
+      <td>开放访问</td>
+      <td>PhysioNet</td>
+      <td><a href="https://physionet.org/content/chbmit/1.0.0/" target="_blank" rel="noopener">https://physionet.org/content/chbmit/1.0.0/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>儿童癫痫头皮 EEG（标注）</td>
+      <td>EEG/事件标注</td>
+      <td>癫痫发作检测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neuroscience</td>
+      <td>Electrophysiology</td>
+      <td>EEG Motor Movement/Imagery Dataset（PhysioNet）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB</td>
+      <td>开放访问</td>
+      <td>PhysioNet</td>
+      <td><a href="https://physionet.org/content/eegmmidb/1.0.0/" target="_blank" rel="noopener">https://physionet.org/content/eegmmidb/1.0.0/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>运动/想象 EEG 基准</td>
+      <td>EEG/事件标注</td>
+      <td>BCI/分类</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neuroscience</td>
+      <td>Neuroimaging/fMRI</td>
+      <td>UK Biobank – Brain Imaging</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#fb923c;margin-right:6px;vertical-align:middle;'></span>大型</td>
+      <td>大型</td>
+      <td>≈100–200 TB（影像子集）</td>
+      <td>受控访问</td>
+      <td>Web / Application</td>
+      <td><a href="https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=100" target="_blank" rel="noopener">https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=100</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>50万队列中的大规模脑影像子集</td>
+      <td>MRI/fMRI/dMRI/结构化表型</td>
+      <td>严格申请与伦理审批</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neuroscience</td>
+      <td>Neuroimaging/Repos</td>
+      <td>NeuroVault</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–50 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://neurovault.org/" target="_blank" rel="noopener">https://neurovault.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>统计脑图/体素级结果共享</td>
+      <td>Z‑map/统计图/元数据</td>
+      <td>荟萃/复现/神经影像推理</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neuroscience</td>
+      <td>Morphology</td>
+      <td>NeuroMorpho.Org</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–200 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="http://neuromorpho.org/" target="_blank" rel="noopener">http://neuromorpho.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>神经元形态重建共享库</td>
+      <td>SWC/形态/元数据</td>
+      <td>形态学/计算建模</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neuroscience</td>
+      <td>Invasive/IEEG</td>
+      <td>iEEG.org (International EEG Portal, UPenn)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–500 GB（公共项目）</td>
+      <td>部分受控</td>
+      <td>Web / API</td>
+      <td><a href="https://www.ieeg.org/" target="_blank" rel="noopener">https://www.ieeg.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>侵入式/非侵入式 EEG 数据门户</td>
+      <td>ECoG/SEEG/EEG</td>
+      <td>需申请；研究协作平台</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table></body></html>

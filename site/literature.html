@@ -1,0 +1,314 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · Literature（补全）</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · Literature（补全）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Literature</td>
+      <td>Bibliographic Graph</td>
+      <td>OpenAlex (successor to MAG)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB（快照+API）</td>
+      <td>开放访问</td>
+      <td>Web / API / Snapshots</td>
+      <td><a href="https://openalex.org/" target="_blank" rel="noopener">https://openalex.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>开放学术知识图（作品/作者/机构/主题/引用）</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>引文网络、学科图谱、指标</td>
+      <td>替代 Microsoft Academic</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>Publisher Index</td>
+      <td>Crossref Metadata & REST API</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB（元数据合计）</td>
+      <td>开放访问</td>
+      <td>Web / REST / Snapshots</td>
+      <td><a href="https://www.crossref.org/" target="_blank" rel="noopener">https://www.crossref.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>出版商登记的 DOI 元数据与参考文献</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>引文匹配、文献计量</td>
+      <td>Event Data 另列</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>Scholarly Corpus</td>
+      <td>Semantic Scholar Open Research Corpus (S2ORC)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–20 TB</td>
+      <td>开放访问</td>
+      <td>Web / S3</td>
+      <td><a href="https://allenai.org/data/s2orc" target="_blank" rel="noopener">https://allenai.org/data/s2orc</a></td>
+      <td>⭐⭐⭐⭐ 高</td>
+      <td>大规模学术全文元数据与引用解析</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>NLP、信息抽取、引文解析</td>
+      <td>遵守许可与使用条款</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>Citation Open</td>
+      <td>OpenCitations – COCI / other indexes</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–500 GB</td>
+      <td>开放访问</td>
+      <td>Web / Dumps / API</td>
+      <td><a href="https://opencitations.net/" target="_blank" rel="noopener">https://opencitations.net/</a></td>
+      <td>⭐⭐⭐⭐ 高</td>
+      <td>开放引用索引（基于 Crossref 等）</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>引文网络、开放引文覆盖</td>
+      <td>多索引（COCI、OpenAlexCitations等）</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>Aggregator</td>
+      <td>CORE (aggregator of OA papers)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB（聚合）</td>
+      <td>开放/注册混合</td>
+      <td>Web / API / Dataset</td>
+      <td><a href="https://core.ac.uk/services#dataset" target="_blank" rel="noopener">https://core.ac.uk/services#dataset</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球开放获取论文聚合</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>IR、去重、分类</td>
+      <td>数据集需申请/协议</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>OA Discovery</td>
+      <td>Unpaywall (OA status database)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–200 GB（快照）</td>
+      <td>开放访问</td>
+      <td>Web / API / Snapshot</td>
+      <td><a href="https://unpaywall.org/" target="_blank" rel="noopener">https://unpaywall.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>论文 OA 状态与许可信息</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>OA 覆盖评估、链接解析</td>
+      <td>CC BY‑NC 数据使用</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>Preprints</td>
+      <td>arXiv Bulk Data & OAI</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB</td>
+      <td>开放访问</td>
+      <td>Web / S3 / OAI‑PMH</td>
+      <td><a href="https://arxiv.org/help/bulk_data" target="_blank" rel="noopener">https://arxiv.org/help/bulk_data</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>学术预印本全文与元数据</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>NLP、图表抽取、主题建模</td>
+      <td>学科以理工为主</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>Life Sci</td>
+      <td>PubMed / PubMed Baseline (metadata)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–200 GB（基线）</td>
+      <td>开放访问</td>
+      <td>FTP / E‑utilities</td>
+      <td><a href="https://ftp.ncbi.nlm.nih.gov/pubmed/" target="_blank" rel="noopener">https://ftp.ncbi.nlm.nih.gov/pubmed/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>生物医学文献元数据与摘要</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>生物医学检索、NER、MeSH 映射</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>Life Sci OA</td>
+      <td>PubMed Central (PMC) Open Access Subset</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB</td>
+      <td>开放访问</td>
+      <td>FTP / OAI</td>
+      <td><a href="https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/" target="_blank" rel="noopener">https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>生物医学开放获取全文（子集）</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>信息抽取、系统综述自动化</td>
+      <td>遵循各条目许可</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>Life Sci</td>
+      <td>Europe PMC</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB（含专利/资助链接）</td>
+      <td>开放访问</td>
+      <td>Web / REST / OAI</td>
+      <td><a href="https://europepmc.org/" target="_blank" rel="noopener">https://europepmc.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>生命科学文献与预印本聚合</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>文本挖掘、链接数据</td>
+      <td>与 PMC/Preprint 互补</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>CS Catalog</td>
+      <td>DBLP Computer Science Bibliography</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB</td>
+      <td>开放访问</td>
+      <td>Web / XML Dumps</td>
+      <td><a href="https://dblp.org/" target="_blank" rel="noopener">https://dblp.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>计算机科学文献元数据</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>网络分析、作者消歧</td>
+      <td>高质量手工/半自动整理</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>CS/AI Graph</td>
+      <td>AMiner Open Academic Graph (OAG)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–20 TB（历史快照）</td>
+      <td>开放访问</td>
+      <td>Web / Downloads</td>
+      <td><a href="https://www.aminer.cn/oag" target="_blank" rel="noopener">https://www.aminer.cn/oag</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>与 MAG/AMiner 融合的学术图谱</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>引文网络、影响力分析</td>
+      <td>部分基于已停更的 MAG</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>Archived</td>
+      <td>Microsoft Academic Graph (MAG, archived)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB（最后快照）</td>
+      <td>开放访问</td>
+      <td>Azure / Downloads</td>
+      <td><a href="https://aka.ms/msracad" target="_blank" rel="noopener">https://aka.ms/msracad</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>已停更的学术知识图（归档）</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>历史研究、对比</td>
+      <td>被 OpenAlex 部分替代</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>Identifiers</td>
+      <td>ORCID Public Data File</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB（年度快照）</td>
+      <td>开放/注册混合</td>
+      <td>Web / S3</td>
+      <td><a href="https://info.orcid.org/documentation/features/public-data-file/" target="_blank" rel="noopener">https://info.orcid.org/documentation/features/public-data-file/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>研究者唯一身份标识与公开档案</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>消歧/画像/匹配</td>
+      <td>需注册并遵守使用政策</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>Grants/Links</td>
+      <td>OpenAIRE Research Graph</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB</td>
+      <td>开放访问</td>
+      <td>Web / Dumps / API</td>
+      <td><a href="https://graph.openaire.eu/" target="_blank" rel="noopener">https://graph.openaire.eu/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>科研产出、资助、数据集之间的开放图谱</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>链接数据、OA 合规、监测</td>
+      <td>欧盟为主，全球覆盖增长</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>Events</td>
+      <td>Crossref Event Data</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–50 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://www.eventdata.crossref.org/" target="_blank" rel="noopener">https://www.eventdata.crossref.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>学术作品的网络引用与社交提及事件</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>替代计量（altmetrics）</td>
+      <td>与 Crossref 元数据配合使用</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>Repositories</td>
+      <td>OpenAIRE / OpenDOAR (repository directories)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–5 GB（目录）</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://v2.sherpa.ac.uk/opendoar/" target="_blank" rel="noopener">https://v2.sherpa.ac.uk/opendoar/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>开放仓储（机构/学科）目录</td>
+      <td>文献元数据/全文/引用/标识</td>
+      <td>数据发现、爬取种子</td>
+      <td>目录非全文</td>
+    </tr>
+  </tbody>
+</table></body></html>

@@ -1,0 +1,666 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · Biology (Expanded)</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · Biology（扩充版，按官方清单对齐）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biology</td>
+      <td>Genomics</td>
+      <td>1000 Genomes Project</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈2–250 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.internationalgenome.org/" target="_blank" rel="noopener">https://www.internationalgenome.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>领域标准/高频引用</td>
+      <td>群体基因组、SNP</td>
+      <td>人群遗传学参考</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Imaging/Registration</td>
+      <td>ANHIR</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈< 10 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://anhir.grand-challenge.org/" target="_blank" rel="noopener">https://anhir.grand-challenge.org/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>组织切片配准</td>
+      <td>图像注册评测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Microbiome</td>
+      <td>American Gut (Microbiome Project)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://github.com/biocore/American-Gut" target="_blank" rel="noopener">https://github.com/biocore/American-Gut</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>肠道微生物组</td>
+      <td>微生物群研究</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Pathology Imaging</td>
+      <td>BCNB (Breast Cancer)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈< 10 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://bupt-ai-cz.github.io/BCNB/" target="_blank" rel="noopener">https://bupt-ai-cz.github.io/BCNB/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>全切片影像（WSI）</td>
+      <td>乳腺病理识别</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Imaging</td>
+      <td>Broad Bioimage Benchmark Collection (BBBC)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://bbbc.broadinstitute.org/" target="_blank" rel="noopener">https://bbbc.broadinstitute.org/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>显微图像/标注</td>
+      <td>算法训练与评测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Cancer Genomics</td>
+      <td>Cancer Cell Line Encyclopedia (CCLE)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://portals.broadinstitute.org/ccle" target="_blank" rel="noopener">https://portals.broadinstitute.org/ccle</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>国际常用/引用频繁</td>
+      <td>细胞系多组学</td>
+      <td>药敏与机制研究</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Histology Imaging</td>
+      <td>CIMA</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈< 10 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://cmp.felk.cvut.cz/~borovji3/?page_id=43" target="_blank" rel="noopener">https://cmp.felk.cvut.cz/~borovji3/?page_id=43</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>组织切片图像</td>
+      <td>组织分类/分割</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Imaging</td>
+      <td>Cell Image Library</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.cellimagelibrary.org/" target="_blank" rel="noopener">https://www.cellimagelibrary.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>国际常用/引用频繁</td>
+      <td>细胞显微图像</td>
+      <td>形态学/训练</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Genomics</td>
+      <td>Complete Genomics Public Data</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.completegenomics.com/public-data/" target="_blank" rel="noopener">https://www.completegenomics.com/public-data/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>全基因组序列</td>
+      <td>算法验证/比对</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Cytometry Imaging</td>
+      <td>CytoImageNet</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.kaggle.com/datasets/jenny18/cell-images-for-detecting-malaria" target="_blank" rel="noopener">https://www.kaggle.com/datasets/jenny18/cell-images-for-detecting-malaria</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>细胞图像集合</td>
+      <td>表型分类</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Functional Genomics</td>
+      <td>ArrayExpress (EBI)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–20 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress" target="_blank" rel="noopener">https://www.ebi.ac.uk/arrayexpress</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>国际常用/引用频繁</td>
+      <td>表达数据（微阵列/RNA-seq）</td>
+      <td>差异表达</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Structural Biology</td>
+      <td>EMDB / PDBe</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈< 10 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.ebi.ac.uk/pdbe/" target="_blank" rel="noopener">https://www.ebi.ac.uk/pdbe/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>领域标准/高频引用</td>
+      <td>电镜重构/蛋白结构</td>
+      <td>结构生物与药物设计</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Functional Genomics</td>
+      <td>ENCODE</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#dc2626;margin-right:6px;vertical-align:middle;'></span>超大型</td>
+      <td>超大型</td>
+      <td>≈3 PB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.encodeproject.org/" target="_blank" rel="noopener">https://www.encodeproject.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>领域标准/高频引用</td>
+      <td>表观遗传/调控元件</td>
+      <td>转录调控/表观遗传</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Imaging</td>
+      <td>EMPIAR</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–20 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.ebi.ac.uk/empiar/" target="_blank" rel="noopener">https://www.ebi.ac.uk/empiar/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>国际常用/引用频繁</td>
+      <td>电镜原始影像</td>
+      <td>重建/深度学习影像</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Genomics</td>
+      <td>Ensembl Genomes</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.ensembl.org" target="_blank" rel="noopener">https://www.ensembl.org</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>领域标准/高频引用</td>
+      <td>多物种基因组注释</td>
+      <td>注释/比较基因组</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Functional Genomics</td>
+      <td>Gene Expression Omnibus (GEO)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–20 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.ncbi.nlm.nih.gov/geo/" target="_blank" rel="noopener">https://www.ncbi.nlm.nih.gov/geo/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>领域标准/高频引用</td>
+      <td>表达组数据</td>
+      <td>生物标志物/差异表达</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Ontology</td>
+      <td>Gene Ontology (GO)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://geneontology.org/" target="_blank" rel="noopener">https://geneontology.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>领域标准/高频引用</td>
+      <td>功能注释本体</td>
+      <td>富集分析</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Ecology</td>
+      <td>Global Biotic Interactions (GloBI)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.globalbioticinteractions.org/" target="_blank" rel="noopener">https://www.globalbioticinteractions.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>国际常用/引用频繁</td>
+      <td>物种互作</td>
+      <td>生态网络</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Chemical Biology</td>
+      <td>HMS LINCS</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://lincs.hms.harvard.edu/" target="_blank" rel="noopener">https://lincs.hms.harvard.edu/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>化合物诱导转录反应</td>
+      <td>药物反应/通路</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Population Genetics</td>
+      <td>Human Genome Diversity Project (HGDP)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.hagsc.org/hgdp/" target="_blank" rel="noopener">https://www.hagsc.org/hgdp/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>国际常用/引用频繁</td>
+      <td>群体多样性基因组</td>
+      <td>祖源/群体结构</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Microbiome</td>
+      <td>Human Microbiome Project (HMP)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈< 10 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.hmpdacc.org/" target="_blank" rel="noopener">https://www.hmpdacc.org/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>人体微生物组</td>
+      <td>群落与功能</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Bioinformatics Benchmarks</td>
+      <td>ICOS PSP Benchmark</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈< 10 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://ico2s.org/datasets/psp_benchmark.html" target="_blank" rel="noopener">https://ico2s.org/datasets/psp_benchmark.html</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>蛋白-蛋白相互作用预测基准</td>
+      <td>算法评测</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Population Genetics</td>
+      <td>International HapMap Project</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.hapmap.org/" target="_blank" rel="noopener">https://www.hapmap.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>国际常用/引用频繁</td>
+      <td>SNP/连锁不平衡</td>
+      <td>群体结构</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Imaging</td>
+      <td>JCB DataViewer (moved to BioStudies)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.ebi.ac.uk/biostudies/" target="_blank" rel="noopener">https://www.ebi.ac.uk/biostudies/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>论文附属影像</td>
+      <td>可视化/复现</td>
+      <td>链接已迁移</td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Pathways</td>
+      <td>KEGG</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.genome.jp/kegg/" target="_blank" rel="noopener">https://www.genome.jp/kegg/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>领域标准/高频引用</td>
+      <td>通路/代谢/基因</td>
+      <td>通路富集</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Proteins</td>
+      <td>NCBI Proteins</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.ncbi.nlm.nih.gov/protein/" target="_blank" rel="noopener">https://www.ncbi.nlm.nih.gov/protein/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>蛋白序列/注释</td>
+      <td>蛋白功能</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Taxonomy</td>
+      <td>NCBI Taxonomy</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.ncbi.nlm.nih.gov/taxonomy" target="_blank" rel="noopener">https://www.ncbi.nlm.nih.gov/taxonomy</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>物种分类体系</td>
+      <td>分类/注释</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Cancer Genomics</td>
+      <td>NCI Genomic Data Commons (GDC)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB</td>
+      <td>部分受控</td>
+      <td>Web / API</td>
+      <td><a href="https://portal.gdc.cancer.gov/" target="_blank" rel="noopener">https://portal.gdc.cancer.gov/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>国际常用/引用频繁</td>
+      <td>肿瘤多组学+临床</td>
+      <td>癌症研究（部分受控）</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Microarray</td>
+      <td>NIH Microarray Data</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈< 10 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.ncbi.nlm.nih.gov/geo/" target="_blank" rel="noopener">https://www.ncbi.nlm.nih.gov/geo/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>微阵列表达</td>
+      <td>与 GEO 相关</td>
+      <td>GEO 汇聚</td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Chemistry/Bioactivity</td>
+      <td>PubChem</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈15 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">https://pubchem.ncbi.nlm.nih.gov/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>领域标准/高频引用</td>
+      <td>化合物/活性</td>
+      <td>虚拟筛选/QSAR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Text Mining</td>
+      <td>PubGene / Coremine Medical</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈< 10 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.coremine.com/medical/" target="_blank" rel="noopener">https://www.coremine.com/medical/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>生物医学关联挖掘</td>
+      <td>假说生成</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Systems Biology</td>
+      <td>SSBD (RIKEN)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈< 10 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://ssbd.riken.jp/" target="_blank" rel="noopener">https://ssbd.riken.jp/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>动态生物成像/定量数据</td>
+      <td>系统生物学</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Cancer Genomics</td>
+      <td>TCGA (via Broad GDAC / GDC)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB</td>
+      <td>部分受控</td>
+      <td>Web / API</td>
+      <td><a href="https://gdac.broadinstitute.org/" target="_blank" rel="noopener">https://gdac.broadinstitute.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>领域标准/高频引用</td>
+      <td>癌症多组学</td>
+      <td>癌症研究（部分受控）</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Taxonomy</td>
+      <td>Catalogue of Life</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈< 10 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.catalogueoflife.org/" target="_blank" rel="noopener">https://www.catalogueoflife.org/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>物种名录</td>
+      <td>分类学参考</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Genomics</td>
+      <td>Personal Genome Project</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈< 10 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.personalgenomes.org/" target="_blank" rel="noopener">https://www.personalgenomes.org/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>个人基因组/表型</td>
+      <td>公开志愿者</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Genomics</td>
+      <td>UCSC Public Data</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://genome.ucsc.edu/" target="_blank" rel="noopener">https://genome.ucsc.edu/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>领域标准/高频引用</td>
+      <td>基因组/注释/浏览</td>
+      <td>基因组浏览参考</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Transcriptomics</td>
+      <td>UniGene (NCBI)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈< 10 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.ncbi.nlm.nih.gov/unigene" target="_blank" rel="noopener">https://www.ncbi.nlm.nih.gov/unigene</a></td>
+      <td>⭐⭐ 中</td>
+      <td>常用公共数据库</td>
+      <td>转录本聚类（历史）</td>
+      <td>表达参考（历史）</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Proteomics</td>
+      <td>UniProt</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.uniprot.org/" target="_blank" rel="noopener">https://www.uniprot.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>领域标准/高频引用</td>
+      <td>蛋白注释</td>
+      <td>功能映射/富集</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Non-coding RNA</td>
+      <td>Rfam</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–800 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://rfam.org/" target="_blank" rel="noopener">https://rfam.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>国际常用/引用频繁</td>
+      <td>RNA 家族/结构</td>
+      <td>ncRNA 分析</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table></body></html>

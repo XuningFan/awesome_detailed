@@ -1,0 +1,298 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · Transportation（补全）</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · Transportation（补全）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Transportation</td>
+      <td>Aviation / Flights</td>
+      <td>OpenSky Network</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB（历史+实时）</td>
+      <td>开放/注册混合</td>
+      <td>Web / API / Impala</td>
+      <td><a href="https://opensky-network.org/" target="_blank" rel="noopener">https://opensky-network.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>全球 ADS‑B 飞行轨迹（众包接收站）</td>
+      <td>航迹/经纬高/应答机</td>
+      <td>航班分析、延误、空域研究</td>
+      <td>历史批量需申请；遵守条款</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>Aviation / Flights</td>
+      <td>ADS‑B Exchange (community)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB（历史镜像）</td>
+      <td>部分开放</td>
+      <td>Web / API / S3（镜像）</td>
+      <td><a href="https://www.adsbexchange.com/data/" target="_blank" rel="noopener">https://www.adsbexchange.com/data/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>社区维护的无过滤 ADS‑B 数据</td>
+      <td>航迹/六分量/机型</td>
+      <td>轨迹挖掘/可视化</td>
+      <td>可用性随镜像变化</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>Aviation / On‑time</td>
+      <td>US DOT BTS – Airline On‑Time Performance</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–200 GB（1987‑今）</td>
+      <td>开放访问</td>
+      <td>Web / Download / API</td>
+      <td><a href="https://transtats.bts.gov/ONTIME/" target="_blank" rel="noopener">https://transtats.bts.gov/ONTIME/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>美国航班起降准点、延误、天气等</td>
+      <td>表格/航班级</td>
+      <td>延误建模、服务评估</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>Transit / GTFS</td>
+      <td>MobilityData GTFS Feed Registry</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–50 GB（索引）</td>
+      <td>开放访问</td>
+      <td>Web / Registry</td>
+      <td><a href="https://bit.ly/gtfs-registry" target="_blank" rel="noopener">https://bit.ly/gtfs-registry</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>全球公交/地铁/轻轨 GTFS 源索引</td>
+      <td>时刻/线路/站点（GTFS）</td>
+      <td>时刻表、可达性、最短路</td>
+      <td>索引指向各机构源</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>Transit / GTFS</td>
+      <td>Transitland (catalog & API)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://www.transit.land/" target="_blank" rel="noopener">https://www.transit.land/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>多机构 GTFS 聚合与 API</td>
+      <td>GTFS/GTFS‑rt</td>
+      <td>跨城聚合、实时接入</td>
+      <td>部分实时需密钥</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>Transit / City API</td>
+      <td>Transport for London (TfL) Unified API</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB（接口）</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://api.tfl.gov.uk/" target="_blank" rel="noopener">https://api.tfl.gov.uk/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>伦敦地铁/公交/道路开放数据与实时</td>
+      <td>时刻/事件/拥堵</td>
+      <td>城市级出行应用/预测</td>
+      <td>需注册 Key</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>Transit / City API</td>
+      <td>NYC MTA GTFS / Real‑Time (NYCT, LIRR, MNR)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB（接口）</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://new.mta.info/developers" target="_blank" rel="noopener">https://new.mta.info/developers</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>纽约地铁/通勤铁路 GTFS 与实时</td>
+      <td>GTFS/GTFS‑rt</td>
+      <td>到站预测、可靠性分析</td>
+      <td>需注册条款</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>Road Traffic</td>
+      <td>Uber Movement (travel times)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–500 GB（聚合）</td>
+      <td>开放访问</td>
+      <td>Web / Download</td>
+      <td><a href="https://movement.uber.com/" target="_blank" rel="noopener">https://movement.uber.com/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>多城市道路出行时间聚合栅格</td>
+      <td>OD/网格/旅行时间</td>
+      <td>可达性、拥堵、规划</td>
+      <td>为匿名聚合统计</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>Road Traffic</td>
+      <td>UK Department for Transport Open Data</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB</td>
+      <td>开放访问</td>
+      <td>Web / Download</td>
+      <td><a href="https://www.gov.uk/guidance/traffic-counts" target="_blank" rel="noopener">https://www.gov.uk/guidance/traffic-counts</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>英国道路交通流量计数与指标</td>
+      <td>流量/按路段/按时段</td>
+      <td>交通建模、季节性</td>
+      <td>还有事故/许可等栏目</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>Road Safety</td>
+      <td>US NHTSA – FARS / CRSS Crash Data</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–200 GB</td>
+      <td>开放访问</td>
+      <td>Web / Download</td>
+      <td><a href="https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/" target="_blank" rel="noopener">https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/</a></td>
+      <td>⭐⭐⭐⭐ 高</td>
+      <td>致命事故(FARS)/样本事故(CRSS)</td>
+      <td>事故/车辆/道路/天气</td>
+      <td>道路安全、风险建模</td>
+      <td>字段字典完备</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>Taxis / Ride‑hail</td>
+      <td>NYC TLC Trip Record Data</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–20 TB（2009‑今）</td>
+      <td>开放访问</td>
+      <td>Web / S3</td>
+      <td><a href="https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page" target="_blank" rel="noopener">https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>纽约黄/绿出租与网约车逐单数据</td>
+      <td>逐单/时空/费用/里程</td>
+      <td>出行需求、定价、OD 分析</td>
+      <td>体量大，注意隐私规则</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>Taxis / Ride‑hail</td>
+      <td>Chicago Taxi Trips</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–200 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew" target="_blank" rel="noopener">https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>芝加哥出租车出行逐单数据</td>
+      <td>逐单/时空/费用</td>
+      <td>OD/收入/政策评估</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>Micromobility</td>
+      <td>GBFS – General Bikeshare Feed Spec（spec + feeds）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–50 GB（历史抓取视采集）</td>
+      <td>开放访问</td>
+      <td>Spec / Registry / APIs</td>
+      <td><a href="https://github.com/MobilityData/gbfs" target="_blank" rel="noopener">https://github.com/MobilityData/gbfs</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>共享单车/滑板车实时与静态接口规范</td>
+      <td>站点/车辆/可用量/行程</td>
+      <td>实时可视化、运力均衡</td>
+      <td>需各运营商实际feed</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>Maritime</td>
+      <td>AIS – Marine Traffic (open subsets / AISHub)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB（网络聚合）</td>
+      <td>注册/部分开放</td>
+      <td>Web / API</td>
+      <td><a href="https://www.aishub.net/" target="_blank" rel="noopener">https://www.aishub.net/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>海事 AIS 航迹（部分开放/社区）</td>
+      <td>轨迹/港口/船型</td>
+      <td>海运分析、港航效率</td>
+      <td>官方平台多为商业，社区版有限</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>Multimodal / EU</td>
+      <td>Eurostat – Transport statistics</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://ec.europa.eu/eurostat/web/transport" target="_blank" rel="noopener">https://ec.europa.eu/eurostat/web/transport</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>欧盟运输统计（公路/铁路/航空/海运）</td>
+      <td>表格/时间序列/区域</td>
+      <td>比较研究、政策评估</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>US Multimodal</td>
+      <td>Bureau of Transportation Statistics (BTS) portal</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–200 GB（分散）</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://data.transportation.gov/" target="_blank" rel="noopener">https://data.transportation.gov/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>交通部多领域开放数据门户</td>
+      <td>表格/地理/时间序列</td>
+      <td>跨方式分析、整合</td>
+      <td>与 data.gov 关联</td>
+    </tr>
+  </tbody>
+</table></body></html>

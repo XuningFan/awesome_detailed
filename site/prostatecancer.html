@@ -1,0 +1,218 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · ProstateCancer（补全）</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · ProstateCancer（补全）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ProstateCancer</td>
+      <td>Genomics</td>
+      <td>TCGA-PRAD（via NCI GDC）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–20 TB</td>
+      <td>部分受控</td>
+      <td>Web / API</td>
+      <td><a href="https://portal.gdc.cancer.gov/projects/TCGA-PRAD" target="_blank" rel="noopener">https://portal.gdc.cancer.gov/projects/TCGA-PRAD</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>前列腺腺癌（多组学+临床）</td>
+      <td>WES/RNA‑seq/CNV/甲基化/临床</td>
+      <td>亚型解析、预后模型、组学整合</td>
+      <td>dbGaP 授权访问受控层；开放派生表可下</td>
+    </tr>
+    <tr>
+      <td>ProstateCancer</td>
+      <td>Genomics</td>
+      <td>ICGC Data Portal – Prostate cohorts</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–5 TB（公开派生）</td>
+      <td>部分受控</td>
+      <td>Web / API</td>
+      <td><a href="https://dcc.icgc.org/" target="_blank" rel="noopener">https://dcc.icgc.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>多队列肿瘤基因组（含 PRAD）</td>
+      <td>变异汇总/临床/部分原始受控</td>
+      <td>跨队列整合、突变谱分析</td>
+      <td>原始级常经 DAC 申请</td>
+    </tr>
+    <tr>
+      <td>ProstateCancer</td>
+      <td>Genomics</td>
+      <td>cBioPortal – Prostate Cancer Studies（MSKCC 等）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–500 GB（各队列合计）</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://www.cbioportal.org/" target="_blank" rel="noopener">https://www.cbioportal.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>多研究队列的基因与临床矩阵</td>
+      <td>突变/拷贝数/表达/临床</td>
+      <td>交互式探索、快速假设检验</td>
+      <td>便捷下载；许可需遵循</td>
+    </tr>
+    <tr>
+      <td>ProstateCancer</td>
+      <td>Imaging‑MRI</td>
+      <td>SPIE‑AAPM‑NCI PROSTATEx Challenge (ProstateX)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–300 GB</td>
+      <td>开放访问</td>
+      <td>TCIA / Web</td>
+      <td><a href="https://wiki.cancerimagingarchive.net/display/Public/SPIE-AAPM-NCI+PROSTATEx+Challenges" target="_blank" rel="noopener">https://wiki.cancerimagingarchive.net/display/Public/SPIE-AAPM-NCI+PROSTATEx+Challenges</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>前列腺 mpMRI 病灶检测挑战</td>
+      <td>T2/DWI/DCE/病灶标签</td>
+      <td>CAD 检测、分割与对比基准</td>
+      <td>需注册 TCIA 账户</td>
+    </tr>
+    <tr>
+      <td>ProstateCancer</td>
+      <td>Imaging‑Segmentation</td>
+      <td>PROMISE12 – Prostate MRI Segmentation</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB</td>
+      <td>注册访问</td>
+      <td>Grand‑Challenge</td>
+      <td><a href="https://promise12.grand-challenge.org/" target="_blank" rel="noopener">https://promise12.grand-challenge.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>MRI 前列腺分割竞赛</td>
+      <td>T2 MRI/掩膜/评测服务器</td>
+      <td>分割算法评测、泛化验证</td>
+      <td>需注册并同意条款</td>
+    </tr>
+    <tr>
+      <td>ProstateCancer</td>
+      <td>Imaging‑MRI</td>
+      <td>Medical Segmentation Decathlon – Task05 Prostate</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="http://medicaldecathlon.com/" target="_blank" rel="noopener">http://medicaldecathlon.com/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>多机构 MRI 前列腺分割任务</td>
+      <td>T2/标签</td>
+      <td>域泛化、半监督/自监督分割</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ProstateCancer</td>
+      <td>Imaging‑Histology</td>
+      <td>Gleason 2019 / PANDA（病理挑战）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈200–500 GB</td>
+      <td>注册访问</td>
+      <td>Grand‑Challenge</td>
+      <td><a href="https://grand-challenge.org/algorithms/panda-challenge/" target="_blank" rel="noopener">https://grand-challenge.org/algorithms/panda-challenge/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>数字病理全切片与 Gleason 分级</td>
+      <td>WSI/病理标注</td>
+      <td>分级/检测/分割/弱监督</td>
+      <td>需同意许可；部分镜像</td>
+    </tr>
+    <tr>
+      <td>ProstateCancer</td>
+      <td>Imaging‑Histology</td>
+      <td>TCGA‑PRAD Pathology Slides（via GDC/TCIA）</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈200–500 GB</td>
+      <td>开放/受控混合</td>
+      <td>Web / API / TCIA</td>
+      <td><a href="https://portal.gdc.cancer.gov/projects/TCGA-PRAD" target="_blank" rel="noopener">https://portal.gdc.cancer.gov/projects/TCGA-PRAD</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>TCGA 前列腺病理切片（WSI）</td>
+      <td>WSI/临床/基因链接</td>
+      <td>多模态配对（影像+组学）</td>
+      <td>与基因组样本可对齐</td>
+    </tr>
+    <tr>
+      <td>ProstateCancer</td>
+      <td>Registry/Outcomes</td>
+      <td>SEER Prostate subset</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–500 GB</td>
+      <td>注册访问</td>
+      <td>Web</td>
+      <td><a href="https://seer.cancer.gov/data/" target="_blank" rel="noopener">https://seer.cancer.gov/data/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>美国癌症登记（含前列腺）</td>
+      <td>表格/事件/生存</td>
+      <td>流行病学、预后模型、政策评估</td>
+      <td>需注册/同意使用协议</td>
+    </tr>
+    <tr>
+      <td>ProstateCancer</td>
+      <td>Transcriptomics</td>
+      <td>GEO – Prostate cancer series</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–500 GB（相关条目合计）</td>
+      <td>开放访问</td>
+      <td>Web / FTP</td>
+      <td><a href="https://www.ncbi.nlm.nih.gov/geo/" target="_blank" rel="noopener">https://www.ncbi.nlm.nih.gov/geo/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>芯片/测序表达数据集合</td>
+      <td>表达矩阵/原始文件</td>
+      <td>差异表达、通路富集、亚型</td>
+      <td>检索 PRAD/Prostate 关键字</td>
+    </tr>
+    <tr>
+      <td>ProstateCancer</td>
+      <td>Synthetic</td>
+      <td>Synthea Prostate Cancer module</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–50 GB（可自生）</td>
+      <td>开放访问</td>
+      <td>Web / GitHub</td>
+      <td><a href="https://synthea.mitre.org/" target="_blank" rel="noopener">https://synthea.mitre.org/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>包含前列腺癌自然史的合成 EHR</td>
+      <td>EHR/就诊/治疗/路径</td>
+      <td>方法验证、隐私友好原型</td>
+      <td>可按州/人群规模生成</td>
+    </tr>
+  </tbody>
+</table></body></html>

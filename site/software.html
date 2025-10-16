@@ -1,0 +1,298 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · Software（补全）</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · Software（补全）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software</td>
+      <td>Code Archive</td>
+      <td>Software Heritage (SWH) – universal source code archive</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#dc2626;margin-right:6px;vertical-align:middle;'></span>超大型</td>
+      <td>超大型</td>
+      <td>≈10+ PB（持续增长）</td>
+      <td>开放访问</td>
+      <td>Web / API / SWHID</td>
+      <td><a href="https://www.softwareheritage.org/" target="_blank" rel="noopener">https://www.softwareheritage.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>全球最大开源代码“史馆”与持久标识</td>
+      <td>源码/版本历史/元数据</td>
+      <td>软件考古、复现、依赖追踪</td>
+      <td>抓取多平台，遵循源许可</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Code Events</td>
+      <td>GH Archive – GitHub public event stream</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB（多年合计）</td>
+      <td>开放访问</td>
+      <td>Web / GCS / BigQuery</td>
+      <td><a href="https://www.gharchive.org/" target="_blank" rel="noopener">https://www.gharchive.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>GitHub Star/Fork/Issue/PR 等事件</td>
+      <td>时间序列/JSON</td>
+      <td>开发活动分析、生态研究</td>
+      <td>与 GHTorrent 互补</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Code Graph</td>
+      <td>GHTorrent – GitHub data mirror</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB</td>
+      <td>开放访问</td>
+      <td>Web / Dumps / Mongo/MySQL</td>
+      <td><a href="http://ghtorrent.org/" target="_blank" rel="noopener">http://ghtorrent.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>GitHub 项目/用户/关系的镜像</td>
+      <td>图/事件/关系型</td>
+      <td>协作网络、依赖传播</td>
+      <td>更新频率视镜像</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Code on BQ</td>
+      <td>GitHub on BigQuery (google/github_repos)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB</td>
+      <td>开放访问</td>
+      <td>BigQuery</td>
+      <td><a href="https://cloud.google.com/bigquery/public-data/github" target="_blank" rel="noopener">https://cloud.google.com/bigquery/public-data/github</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>GitHub 公共仓库内容与元数据（可SQL）</td>
+      <td>源码/提交/文件</td>
+      <td>代码搜索、脆弱性模式挖掘</td>
+      <td>需GCP项目；查询计费</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Package Graph</td>
+      <td>Libraries.io Open Data</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–500 GB</td>
+      <td>开放访问</td>
+      <td>Web / Dumps / API</td>
+      <td><a href="https://libraries.io/data" target="_blank" rel="noopener">https://libraries.io/data</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>跨生态依赖与版本元数据</td>
+      <td>依赖图/版本/许可</td>
+      <td>供应链/依赖策略</td>
+      <td>覆盖 npm/PyPI/Maven/CRAN 等</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Vulnerabilities</td>
+      <td>OSV.dev – Open Source Vulnerabilities</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB</td>
+      <td>开放访问</td>
+      <td>Web / API / Dumps</td>
+      <td><a href="https://osv.dev/" target="_blank" rel="noopener">https://osv.dev/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>开源组件漏洞统一方案与数据</td>
+      <td>通报/受影响版本/映射</td>
+      <td>SBOM/修复建议/自动匹配</td>
+      <td>谷歌维护，社区参与</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Vulnerabilities</td>
+      <td>NVD (NIST) – National Vulnerability Database</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB</td>
+      <td>开放访问</td>
+      <td>Web / Feeds / API</td>
+      <td><a href="https://nvd.nist.gov/vuln/data-feeds" target="_blank" rel="noopener">https://nvd.nist.gov/vuln/data-feeds</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>CVE/CPE/CVSS 官方词条与评分</td>
+      <td>JSON/词表</td>
+      <td>风控、合规、漏洞挖掘</td>
+      <td>按日/周发布</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Package Registry</td>
+      <td>npm Registry (metadata dumps / BQ)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10–50 TB（生态总量）</td>
+      <td>开放访问</td>
+      <td>Web / API / BigQuery</td>
+      <td><a href="https://registry.npmjs.org/" target="_blank" rel="noopener">https://registry.npmjs.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>Node.js 包注册表与依赖元数据</td>
+      <td>包/版本/依赖/脚本</td>
+      <td>供应链安全、生态演化</td>
+      <td>BQ 公共数据集可用</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Package Registry</td>
+      <td>PyPI (BigQuery public dataset)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–500 GB（元数据/BQ）</td>
+      <td>开放访问</td>
+      <td>Web / API / BigQuery</td>
+      <td><a href="https://warehouse.pypa.io/" target="_blank" rel="noopener">https://warehouse.pypa.io/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>Python 包注册表与下载统计</td>
+      <td>包/版本/依赖/下载</td>
+      <td>生态分析、依赖风险</td>
+      <td>数据口径视镜像</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Package Registry</td>
+      <td>CRAN (R) package database</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50–100 GB</td>
+      <td>开放访问</td>
+      <td>Web / MRAN（存档）</td>
+      <td><a href="https://cran.r-project.org/" target="_blank" rel="noopener">https://cran.r-project.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>R 包与依赖/任务视图</td>
+      <td>包索引/描述/依赖</td>
+      <td>可重复研究、依赖解析</td>
+      <td>镜像/历史存档可用</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Package Registry</td>
+      <td>Maven Central Index</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–200 GB（索引）</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://search.maven.org/" target="_blank" rel="noopener">https://search.maven.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>Java 生态主注册表与索引</td>
+      <td>坐标/依赖/版本</td>
+      <td>静态分析、依赖管理</td>
+      <td>完整工件需仓库拉取</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Package Registry</td>
+      <td>Packagist (PHP/Composer)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–200 GB（元数据）</td>
+      <td>开放访问</td>
+      <td>Web / API / Dumps</td>
+      <td><a href="https://packagist.org/" target="_blank" rel="noopener">https://packagist.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>PHP/Composer 官方包仓</td>
+      <td>包/依赖/下载</td>
+      <td>生态分析、依赖图</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Package Registry</td>
+      <td>Homebrew Formulae API</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈10–50 GB（元数据）</td>
+      <td>开放访问</td>
+      <td>Web / JSON API</td>
+      <td><a href="https://formulae.brew.sh/api/" target="_blank" rel="noopener">https://formulae.brew.sh/api/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>macOS/Linux 包配方元数据与依赖</td>
+      <td>配方/依赖/瓶文件</td>
+      <td>构建/复现/供应链</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Usage/Popularity</td>
+      <td>Debian Popularity Contest (popcon)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–5 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://popcon.debian.org/" target="_blank" rel="noopener">https://popcon.debian.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>匿名装机包使用与安装统计</td>
+      <td>包/计数/时间</td>
+      <td>生态健康度、流行度</td>
+      <td>隐私友好聚合</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Code ML</td>
+      <td>CodeSearchNet (GitHub code + docs)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100–200 GB</td>
+      <td>开放访问</td>
+      <td>Web / GitHub</td>
+      <td><a href="https://github.com/github/CodeSearchNet" target="_blank" rel="noopener">https://github.com/github/CodeSearchNet</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>代码-文档对齐数据（多语言）</td>
+      <td>源码/函数/注释</td>
+      <td>代码搜索、跨模态</td>
+      <td>许可与过滤需注意</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Code ML</td>
+      <td>The Stack (Hugging Face) – permissively licensed code</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#fb923c;margin-right:6px;vertical-align:middle;'></span>大型</td>
+      <td>大型</td>
+      <td>≈100 TB+（分语言）</td>
+      <td>开放访问</td>
+      <td>Web / Hub</td>
+      <td><a href="https://huggingface.co/datasets/bigcode/the-stack" target="_blank" rel="noopener">https://huggingface.co/datasets/bigcode/the-stack</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>大规模开源代码语料（许可过滤）</td>
+      <td>源码/元数据</td>
+      <td>预训练/LLM for Code</td>
+      <td>严格遵守许可白名单</td>
+    </tr>
+  </tbody>
+</table></body></html>

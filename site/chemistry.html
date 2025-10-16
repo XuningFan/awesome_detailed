@@ -1,0 +1,394 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Awesome Public Datasets · Chemistry（补全）</title>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .legend { display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin: 8px 0 18px; }
+  .lg { display:flex; align-items:center; gap:6px; }
+  .sq { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; }
+  th { background: #f7f7f8; position: sticky; top: 0; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { text-decoration: none; }
+</style>
+</head><body><h1>Awesome Public Datasets · Chemistry（补全）</h1>
+<div class="legend">
+  <div class="lg"><span class="sq" style="background:#dc2626"></span>超大型（≥ 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#fb923c"></span>大型（100 TB – 1 PB）</div>
+  <div class="lg"><span class="sq" style="background:#f59e0b"></span>中型（10 – 100 TB）</div>
+  <div class="lg"><span class="sq" style="background:#22c55e"></span>小型（< 10 TB）</div>
+</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>学科大类</th>
+      <th>细分领域</th>
+      <th>数据源名称</th>
+      <th>量级标识</th>
+      <th>数据量级别</th>
+      <th>存储量估算</th>
+      <th>是否公开</th>
+      <th>访问途径</th>
+      <th>访问链接</th>
+      <th>访问率等级</th>
+      <th>访问率说明</th>
+      <th>主要类型 / 数据模态</th>
+      <th>典型用途 / 研究方向</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemistry</td>
+      <td>Cheminformatics</td>
+      <td>PubChem</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈15 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">https://pubchem.ncbi.nlm.nih.gov/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>化学与生物活性标准库</td>
+      <td>化合物/活性/结构</td>
+      <td>QSAR、虚拟筛选</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Cheminformatics</td>
+      <td>ChEMBL</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈2 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.ebi.ac.uk/chembl/" target="_blank" rel="noopener">https://www.ebi.ac.uk/chembl/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>药物发现核心库</td>
+      <td>化合物/靶点/活性</td>
+      <td>QSAR、靶点发现</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Cheminformatics</td>
+      <td>ZINC</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈5 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP</td>
+      <td><a href="https://zinc.docking.org/" target="_blank" rel="noopener">https://zinc.docking.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>可对接小分子库</td>
+      <td>化合物结构</td>
+      <td>虚拟对接、药物设计</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Cheminformatics</td>
+      <td>ChemSpider</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1 TB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="http://www.chemspider.com/" target="_blank" rel="noopener">http://www.chemspider.com/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>化学结构聚合索引</td>
+      <td>化合物结构/属性</td>
+      <td>交叉检索</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Cheminformatics</td>
+      <td>BindingDB</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈200 GB</td>
+      <td>开放访问</td>
+      <td>Web / Downloads</td>
+      <td><a href="https://www.bindingdb.org/" target="_blank" rel="noopener">https://www.bindingdb.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>小分子-蛋白结合常数</td>
+      <td>结合数据/活性</td>
+      <td>药效学、建模</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Cheminformatics</td>
+      <td>DrugBank (open subset)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50 GB</td>
+      <td>注册访问</td>
+      <td>Web / Downloads</td>
+      <td><a href="https://go.drugbank.com/releases/latest#open-data" target="_blank" rel="noopener">https://go.drugbank.com/releases/latest#open-data</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>药物知识库（开放子集）</td>
+      <td>结构/适应证/相互作用</td>
+      <td>药物信息学</td>
+      <td>部分内容需许可</td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Cheminformatics</td>
+      <td>STITCH</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈200 GB</td>
+      <td>开放访问</td>
+      <td>Web / Downloads</td>
+      <td><a href="http://stitch.embl.de/" target="_blank" rel="noopener">http://stitch.embl.de/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>化学-蛋白相互作用网络</td>
+      <td>网络/相互作用</td>
+      <td>网络药理学</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Cheminformatics</td>
+      <td>Open Reaction Database (ORD)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://open-reaction-database.org/" target="_blank" rel="noopener">https://open-reaction-database.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>实验反应数据标准格式</td>
+      <td>反应/条件/产率</td>
+      <td>反应预测建模</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Cheminformatics</td>
+      <td>USPTO Reaction Datasets</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈200 GB</td>
+      <td>开放访问</td>
+      <td>Web / Bulk Data</td>
+      <td><a href="https://www.uspto.gov/ip-policy/economics/research/research-datasets" target="_blank" rel="noopener">https://www.uspto.gov/ip-policy/economics/research/research-datasets</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>专利反应/文本</td>
+      <td>SMILES/文本/反应</td>
+      <td>模板抽取/NLP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Spectra/Metabolomics</td>
+      <td>MassBank</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://massbank.eu/MassBank/" target="_blank" rel="noopener">https://massbank.eu/MassBank/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>开源质谱谱库</td>
+      <td>MS/MS 光谱</td>
+      <td>结构鉴定</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Spectra/Metabolomics</td>
+      <td>GNPS / MassIVE</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈20 TB</td>
+      <td>开放访问</td>
+      <td>Web / FTP</td>
+      <td><a href="https://gnps.ucsd.edu/" target="_blank" rel="noopener">https://gnps.ucsd.edu/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>全球天然产物质谱平台</td>
+      <td>MS/MS 数据/网络</td>
+      <td>代谢物鉴定</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Spectra/Metabolomics</td>
+      <td>HMDB (Human Metabolome Database)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web / Downloads</td>
+      <td><a href="https://hmdb.ca/" target="_blank" rel="noopener">https://hmdb.ca/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>人类代谢物数据库</td>
+      <td>代谢物/通路</td>
+      <td>代谢组学</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Spectra/Metabolomics</td>
+      <td>MetaboLights (EBI)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–5 TB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://www.ebi.ac.uk/metabolights/" target="_blank" rel="noopener">https://www.ebi.ac.uk/metabolights/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>代谢组实验数据存储</td>
+      <td>MS/NMR 数据</td>
+      <td>复现与二次分析</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Structural Chemistry</td>
+      <td>RCSB PDB</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP / API</td>
+      <td><a href="https://www.rcsb.org/" target="_blank" rel="noopener">https://www.rcsb.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>蛋白质/大分子三维结构</td>
+      <td>坐标/体密度/注释</td>
+      <td>结构生物/药物设计</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Structural Chemistry</td>
+      <td>CSD (Cambridge Structural Database – open subset)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50 GB</td>
+      <td>注册访问</td>
+      <td>Web / API</td>
+      <td><a href="https://www.ccdc.cam.ac.uk/structures/" target="_blank" rel="noopener">https://www.ccdc.cam.ac.uk/structures/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>有机/金属有机晶体结构</td>
+      <td>CIF/结构</td>
+      <td>晶体化学</td>
+      <td>开放子集</td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Crystallography</td>
+      <td>COD (Crystallography Open Database)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈100 GB</td>
+      <td>开放访问</td>
+      <td>Web / FTP</td>
+      <td><a href="http://www.crystallography.net/cod/" target="_blank" rel="noopener">http://www.crystallography.net/cod/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>无机/有机晶体结构</td>
+      <td>CIF</td>
+      <td>材料与晶体学</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Reference</td>
+      <td>NIST Chemistry WebBook</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈500 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://webbook.nist.gov/chemistry/" target="_blank" rel="noopener">https://webbook.nist.gov/chemistry/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>热化学、光谱、常数</td>
+      <td>参考表/谱库</td>
+      <td>实验参考、校验</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Reference</td>
+      <td>ThermoML (IUPAC)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈50 GB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="https://trc.nist.gov/ThermoML.html" target="_blank" rel="noopener">https://trc.nist.gov/ThermoML.html</a></td>
+      <td>⭐⭐ 中</td>
+      <td>热物性数据（XML）</td>
+      <td>热力学性质</td>
+      <td>物性建模</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Materials/CompChem</td>
+      <td>Materials Project</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10 TB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="https://materialsproject.org/" target="_blank" rel="noopener">https://materialsproject.org/</a></td>
+      <td>⭐⭐⭐⭐ 极高</td>
+      <td>第一性原理材料数据库</td>
+      <td>能带/形成能/结构</td>
+      <td>材料发现</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Materials/CompChem</td>
+      <td>AFLOWlib</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10 TB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="http://aflowlib.org/" target="_blank" rel="noopener">http://aflowlib.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>高通量材料计算数据</td>
+      <td>DFT 计算属性</td>
+      <td>材料筛选</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Materials/CompChem</td>
+      <td>Open Quantum Materials Database (OQMD)</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#f59e0b;margin-right:6px;vertical-align:middle;'></span>中型</td>
+      <td>中型</td>
+      <td>≈10 TB</td>
+      <td>开放访问</td>
+      <td>Web / API</td>
+      <td><a href="http://oqmd.org/" target="_blank" rel="noopener">http://oqmd.org/</a></td>
+      <td>⭐⭐⭐ 高</td>
+      <td>量子材料数据库</td>
+      <td>DFT/结构/能量</td>
+      <td>材料学</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Materials/CompChem</td>
+      <td>PubChemQC Project</td>
+      <td><span style='display:inline-block;width:12px;height:12px;border-radius:3px;background:#22c55e;margin-right:6px;vertical-align:middle;'></span>小型</td>
+      <td>小型</td>
+      <td>≈1–2 TB</td>
+      <td>开放访问</td>
+      <td>Web</td>
+      <td><a href="http://pubchemqc.riken.jp/" target="_blank" rel="noopener">http://pubchemqc.riken.jp/</a></td>
+      <td>⭐⭐ 中</td>
+      <td>小分子量化化学计算结果</td>
+      <td>几何/能量</td>
+      <td>计算化学基准</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table></body></html>
